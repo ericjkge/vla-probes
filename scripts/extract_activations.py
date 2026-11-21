@@ -63,6 +63,7 @@ def make_runner(model, ckpt, hf_id, device):
         x = torch.from_numpy(np.asarray(img, dtype=np.float32) / 127.5 - 1.0)[None].to(device)  # [1,H,W,3] in [-1,1]
         if x.shape[1:3] != (224, 224):
             x = image_tools.resize_with_pad_torch(x, 224, 224)
+            if x.dim() == 3: x = x[None]  # openpi squeezes a batch of 1
         return x.permute(0, 3, 1, 2)  # [1,3,224,224]
 
     def tokens(text):

@@ -244,6 +244,8 @@ def fetch_from_zip(missing_path):
     depth = 3 if rel.parts[0].startswith("new_objects") else 2  # new_objects/<name>/<variant>, others <suite>/<name>
     folder = "assets/" + "/".join(rel.parts[:depth]) + "/"
     members = [i for i in _zip.names if i.filename.startswith(folder)]
+    if not members:  # a loose file directly in a top-level folder (e.g. articulated_objects/water_ball.xml)
+        members = [i for i in _zip.names if i.filename == "assets/" + rel.as_posix()]
     if not members:
         return False
     new = 0

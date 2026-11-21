@@ -357,6 +357,7 @@ def main():
     ap.add_argument("--tries", type=int, default=1, help="re-render a scene with the next seed (new random object positions) up to N times until placement checks pass and nothing falls off")
     ap.add_argument("--redo-bad", action="store_true", help="re-render only scenes that fail scene_status() (use with --tries)")
     ap.add_argument("--skip-done", action="store_true", help="skip scene/variant renders already 'ok' in the manifest")
+    ap.add_argument("--seed-from-manifest", action="store_true", help="start each scene at the seed recorded in the manifest (reproduces an earlier render)")
     ap.add_argument("--montage-dir", default="results/scene_examples")
     a = ap.parse_args()
 
@@ -401,7 +402,8 @@ def main():
             if not todo:
                 continue
             try:
-                outs, used_seed = render_one(path, a.size, a.seed, a.settle, a.fetch_assets, m.get("checks", []), todo, a.tries)
+                seed = m.get("seed", a.seed) if a.seed_from_manifest else a.seed
+                outs, used_seed = render_one(path, a.size, seed, a.settle, a.fetch_assets, m.get("checks", []), todo, a.tries)
                 for v, imgs, res, fell, params in outs:
                     files = {}
                     for cam, im in imgs.items():

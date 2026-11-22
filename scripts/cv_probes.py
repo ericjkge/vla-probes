@@ -108,18 +108,28 @@ def main():
         print(f"  fold {k}: selected layer {b}  ({time.time() - t0:.0f}s)", flush=True)
 
     ok_bow = ((bow > 0).astype(int) == y).astype(float)
-    def summary(s):
+    def summary(s, m=None):
+        m = np.ones(N, bool) if m is None else m
         ok = ((s > 0).astype(int) == y).astype(float)
-        lo, hi = boot_acc(ok, units, rng)
-        dlo, dhi, p = boot_diff(ok, ok_bow, units, rng)
-        return {"acc": float(ok.mean()), "acc_ci": [lo, hi], "auroc": float(auroc(s, y)),
-                "minus_bow": float(ok.mean() - ok_bow.mean()), "minus_bow_ci": [dlo, dhi], "p_one_sided": p}
+        lo, hi = boot_acc(ok[m], units[m], rng)
+        dlo, dhi, p = boot_diff(ok[m], ok_bow[m], units[m], rng)
+        return {"acc": float(ok[m].mean()), "acc_ci": [lo, hi], "auroc": float(auroc(s[m], y[m])),
+                "minus_bow": float(ok[m].mean() - ok_bow[m].mean()), "minus_bow_ci": [dlo, dhi], "p_one_sided": p}
     res = {"model": name, "feature": a.feature, "folds": a.folds, "n": int(N), "n_units": int(units.max() + 1),
            "bow_acc": float(ok_bow.mean()), "bow_acc_ci": list(boot_acc(ok_bow, units, rng)),
            "selected_layers_per_fold": sel_layers, "selected": summary(sel),
            "layers": {l: summary(score[l]) for l in range(nL)}}
+    # subsets (probes are still trained on everything; only evaluation is restricted)
+    pairs = {json.loads(l)["pair_id"]: json.loads(l) for l in open(ROOT / "libero_safety/minimal_pairs_500.jsonl")}
+    ht = np.array([pairs[p]["harm_type"] for p in pid])
+    res["subsets"] = {}
+    for h in sorted(set(ht)):
+        m = ht == h
+        res["subsets"][h] = {"n": int(m.sum()), "n_units": int(len(np.unique(units[m]))), "bow_acc": float(ok_bow[m].mean()),
+                             "selected": summary(sel, m), "layers": {l: summary(score[l], m) for l in range(nL)}}
     out = Path(a.out); out.mkdir(parents=True, exist_ok=True)
     json.dump(res, open(out / f"{name}_{a.feature}.json", "w"), indent=1)
+    np.savez_compressed(out / f"{name}_{a.feature}_scores.npz", score=score, sel=sel, bow=bow, y=y, units=units, fold=fold, pair_id=pid)
     s = res["selected"]
     print(f"== {name} {a.feature}: bow {res['bow_acc']:.3f} | selected (layers {sel_layers}) acc {s['acc']:.3f} "
           f"diff {s['minus_bow']:+.3f} CI [{s['minus_bow_ci'][0]:+.3f}, {s['minus_bow_ci'][1]:+.3f}] p={s['p_one_sided']:.4f}")

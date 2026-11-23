@@ -6,6 +6,7 @@ is ever in both train and test of a fold. Folds balance row counts.
 Per outer fold k: test = fold k, inner val = fold k+1, train = rest. C is picked on inner-val AUROC, then the probe is refit
 on train+val. "selected" = the layer picked per fold on inner-val AUROC (never looks at test) -> the headline number.
 Baseline "bow" = probe on mean_instr at layer 0 (mean of raw token embeddings, no context = bag of words), same procedure.
+Weaker text-only count baselines on the same folds: word_vote (majority label per word, words vote) and word_nb (naive Bayes).
 Significance: paired cluster bootstrap of (probe correct - bow correct) over CV units; 95% CI and one-sided p = P(diff <= 0).
 
   OMP_NUM_THREADS=1 python scripts/cv_probes.py --acts pi05_base=cache/acts/pi05_base.npz --feature last_instr --out results/probes_cv
@@ -37,6 +38,26 @@ def cv_units(pid, label, group):
     roots = [f(k) for k in keys]
     u = {r: i for i, r in enumerate(dict.fromkeys(roots))}
     return np.array([u[r] for r in roots])
+
+
+def word_baselines(pid, label, fold, rng):
+    """text-only count baselines, fit per fold on the training rows (all non-test folds):
+    vote = each word votes for the label it mostly had in training; nb = naive-Bayes log-odds summed over words.
+    -> dict name -> score per row (>0 = harmful)."""
+    import re
+    tab = {(r["pair_id"], r["label"]): r for r in map(json.loads, open(ROOT / "results/dataset_review/probe_table.jsonl"))}
+    words = [set(re.findall(r"[a-z]+", tab[(p, int(l))]["instruction"].lower())) for p, l in zip(pid, label)]
+    vote, nb = np.zeros(len(label)), np.zeros(len(label))
+    for k in np.unique(fold):
+        c = {}
+        for i in np.where(fold != k)[0]:
+            for t in words[i]: c.setdefault(t, [0, 0])[label[i]] += 1
+        for i in np.where(fold == k)[0]:
+            ws = [t for t in words[i] if t in c]
+            v = sum(np.sign(c[t][1] - c[t][0]) for t in ws)
+            vote[i] = v if v != 0 else rng.choice([-1, 1]) * 1e-3  # tie -> coin flip
+            nb[i] = sum(np.log((c[t][1] + 1) / (c[t][0] + 1)) for t in ws)
+    return {"word_vote": vote, "word_nb": nb}
 
 
 def make_folds(units, k):
@@ -108,16 +129,25 @@ def main():
         print(f"  fold {k}: selected layer {b}  ({time.time() - t0:.0f}s)", flush=True)
 
     ok_bow = ((bow > 0).astype(int) == y).astype(float)
-    def summary(s, m=None):
+    wb = word_baselines(pid, y, fold, rng)
+    ok_wb = {k: ((s > 0).astype(int) == y).astype(float) for k, s in wb.items()}
+    def summary(s, m=None, vs_words=False):
         m = np.ones(N, bool) if m is None else m
         ok = ((s > 0).astype(int) == y).astype(float)
         lo, hi = boot_acc(ok[m], units[m], rng)
         dlo, dhi, p = boot_diff(ok[m], ok_bow[m], units[m], rng)
-        return {"acc": float(ok[m].mean()), "acc_ci": [lo, hi], "auroc": float(auroc(s[m], y[m])),
-                "minus_bow": float(ok[m].mean() - ok_bow[m].mean()), "minus_bow_ci": [dlo, dhi], "p_one_sided": p}
+        r = {"acc": float(ok[m].mean()), "acc_ci": [lo, hi], "auroc": float(auroc(s[m], y[m])),
+             "minus_bow": float(ok[m].mean() - ok_bow[m].mean()), "minus_bow_ci": [dlo, dhi], "p_one_sided": p}
+        if vs_words:
+            for k, o in ok_wb.items():
+                dlo, dhi, p = boot_diff(ok[m], o[m], units[m], rng)
+                r[f"minus_{k}"] = float(ok[m].mean() - o[m].mean()); r[f"minus_{k}_ci"] = [dlo, dhi]; r[f"p_vs_{k}"] = p
+        return r
+    words_acc = lambda m: {k: float(o[m].mean()) for k, o in ok_wb.items()}
     res = {"model": name, "feature": a.feature, "folds": a.folds, "n": int(N), "n_units": int(units.max() + 1),
            "bow_acc": float(ok_bow.mean()), "bow_acc_ci": list(boot_acc(ok_bow, units, rng)),
-           "selected_layers_per_fold": sel_layers, "selected": summary(sel),
+           "word_baselines_acc": words_acc(np.ones(N, bool)),
+           "selected_layers_per_fold": sel_layers, "selected": summary(sel, vs_words=True),
            "layers": {l: summary(score[l]) for l in range(nL)}}
     # subsets (probes are still trained on everything; only evaluation is restricted)
     pairs = {json.loads(l)["pair_id"]: json.loads(l) for l in open(ROOT / "libero_safety/minimal_pairs_500.jsonl")}
@@ -126,10 +156,12 @@ def main():
     for h in sorted(set(ht)):
         m = ht == h
         res["subsets"][h] = {"n": int(m.sum()), "n_units": int(len(np.unique(units[m]))), "bow_acc": float(ok_bow[m].mean()),
-                             "selected": summary(sel, m), "layers": {l: summary(score[l], m) for l in range(nL)}}
+                             "word_baselines_acc": words_acc(m),
+                             "selected": summary(sel, m, vs_words=True), "layers": {l: summary(score[l], m) for l in range(nL)}}
     out = Path(a.out); out.mkdir(parents=True, exist_ok=True)
     json.dump(res, open(out / f"{name}_{a.feature}.json", "w"), indent=1)
-    np.savez_compressed(out / f"{name}_{a.feature}_scores.npz", score=score, sel=sel, bow=bow, y=y, units=units, fold=fold, pair_id=pid)
+    np.savez_compressed(out / f"{name}_{a.feature}_scores.npz", score=score, sel=sel, bow=bow, y=y, units=units, fold=fold,
+                        pair_id=pid, **wb)
     s = res["selected"]
     print(f"== {name} {a.feature}: bow {res['bow_acc']:.3f} | selected (layers {sel_layers}) acc {s['acc']:.3f} "
           f"diff {s['minus_bow']:+.3f} CI [{s['minus_bow_ci'][0]:+.3f}, {s['minus_bow_ci'][1]:+.3f}] p={s['p_one_sided']:.4f}")

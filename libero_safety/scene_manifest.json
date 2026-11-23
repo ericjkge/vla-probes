@@ -7,7 +7,7 @@
   "arrangement": [],
   "notes": [],
   "status": "ok",
-  "error": "FileNotFoundError: [Errno 2] No such file or directory: '/Users/anthonyshen/Codebases/vla-harm-monitoring/cache/LIBERO-Safety/libero/libero/assets/scenes/libero_living_room_tabletop_base_style.xml'",
+  "error": "FileNotFoundError: [Errno 2] No such file or directory: '/workspace/vla-probes/cache/LIBERO-Safety/libero/libero/assets/articulated_objects/water_ball.xml'",
   "images": {
    "agentview": "cache/scene_images/flip_the_white_yellow_mug_containing_water__aca29edd__agentview.png",
    "wrist": "cache/scene_images/flip_the_white_yellow_mug_containing_water__aca29edd__wrist.png",
@@ -957,6 +957,7 @@
   "seed": 0,
   "placement_check": [],
   "fell_off": [],
+  "error": "FileNotFoundError: [Errno 2] No such file or directory: '/workspace/vla-probes/cache/LIBERO-Safety/libero/libero/assets/articulated_objects/water_ball.xml'",
   "variants": {
    "v1": {
     "images": {
@@ -1034,6 +1035,7 @@
   "seed": 0,
   "placement_check": [],
   "fell_off": [],
+  "error": "FileNotFoundError: [Errno 2] No such file or directory: '/workspace/vla-probes/cache/LIBERO-Safety/libero/libero/assets/articulated_objects/water_ball.xml'",
   "variants": {
    "v1": {
     "images": {
@@ -1293,7 +1295,9 @@
      "fovy_delta": 2.1214060712673053
     },
     "placement_check": [],
-    "fell_off": []
+    "fell_off": [
+     "bottle_of_dish_soap_1"
+    ]
    },
    "v2": {
     "images": {
@@ -1321,7 +1325,9 @@
      "fovy_delta": -0.8976915772318335
     },
     "placement_check": [],
-    "fell_off": []
+    "fell_off": [
+     "bottle_of_dish_soap_1"
+    ]
    }
   }
  },
@@ -2053,6 +2059,7 @@
   "checks": [],
   "placement_check": [],
   "fell_off": [],
+  "error": "FileNotFoundError: [Errno 2] No such file or directory: '/workspace/vla-probes/cache/LIBERO-Safety/libero/libero/assets/articulated_objects/water_ball.xml'",
   "variants": {
    "v1": {
     "images": {
@@ -2219,6 +2226,7 @@
   "seed": 0,
   "placement_check": [],
   "fell_off": [],
+  "error": "FileNotFoundError: [Errno 2] No such file or directory: '/workspace/vla-probes/cache/LIBERO-Safety/libero/libero/assets/articulated_objects/water_ball.xml'",
   "variants": {
    "v1": {
     "images": {
@@ -2468,6 +2476,7 @@
   "seed": 0,
   "placement_check": [],
   "fell_off": [],
+  "error": "FileNotFoundError: [Errno 2] No such file or directory: '/workspace/vla-probes/cache/LIBERO-Safety/libero/libero/assets/articulated_objects/water_ball.xml'",
   "variants": {
    "v1": {
     "images": {
@@ -2549,6 +2558,7 @@
   "seed": 0,
   "placement_check": [],
   "fell_off": [],
+  "error": "FileNotFoundError: [Errno 2] No such file or directory: '/workspace/vla-probes/cache/LIBERO-Safety/libero/libero/assets/articulated_objects/water_ball.xml'",
   "variants": {
    "v1": {
     "images": {
@@ -2715,6 +2725,7 @@
   "seed": 0,
   "placement_check": [],
   "fell_off": [],
+  "error": "FileNotFoundError: [Errno 2] No such file or directory: '/workspace/vla-probes/cache/LIBERO-Safety/libero/libero/assets/articulated_objects/water_ball.xml'",
   "variants": {
    "v1": {
     "images": {
@@ -2877,6 +2888,7 @@
   "seed": 0,
   "placement_check": [],
   "fell_off": [],
+  "error": "FileNotFoundError: [Errno 2] No such file or directory: '/workspace/vla-probes/cache/LIBERO-Safety/libero/libero/assets/articulated_objects/water_ball.xml'",
   "variants": {
    "v1": {
     "images": {
@@ -2960,6 +2972,7 @@
   "seed": 0,
   "placement_check": [],
   "fell_off": [],
+  "error": "FileNotFoundError: [Errno 2] No such file or directory: '/workspace/vla-probes/cache/LIBERO-Safety/libero/libero/assets/articulated_objects/water_ball.xml'",
   "variants": {
    "v1": {
     "images": {
@@ -3126,6 +3139,7 @@
   "seed": 0,
   "placement_check": [],
   "fell_off": [],
+  "error": "FileNotFoundError: [Errno 2] No such file or directory: '/workspace/vla-probes/cache/LIBERO-Safety/libero/libero/assets/articulated_objects/water_ball.xml'",
   "variants": {
    "v1": {
     "images": {
@@ -3209,6 +3223,7 @@
   "seed": 0,
   "placement_check": [],
   "fell_off": [],
+  "error": "FileNotFoundError: [Errno 2] No such file or directory: '/workspace/vla-probes/cache/LIBERO-Safety/libero/libero/assets/articulated_objects/water_ball.xml'",
   "variants": {
    "v1": {
     "images": {
@@ -3292,6 +3307,7 @@
   "seed": 0,
   "placement_check": [],
   "fell_off": [],
+  "error": "FileNotFoundError: [Errno 2] No such file or directory: '/workspace/vla-probes/cache/LIBERO-Safety/libero/libero/assets/articulated_objects/water_ball.xml'",
   "variants": {
    "v1": {
     "images": {
@@ -3456,6 +3472,7 @@
   "seed": 0,
   "placement_check": [],
   "fell_off": [],
+  "error": "FileNotFoundError: [Errno 2] No such file or directory: '/workspace/vla-probes/cache/LIBERO-Safety/libero/libero/assets/articulated_objects/water_ball.xml'",
   "variants": {
    "v1": {
     "images": {
@@ -3539,6 +3556,7 @@
   "seed": 0,
   "placement_check": [],
   "fell_off": [],
+  "error": "FileNotFoundError: [Errno 2] No such file or directory: '/workspace/vla-probes/cache/LIBERO-Safety/libero/libero/assets/articulated_objects/water_ball.xml'",
   "variants": {
    "v1": {
     "images": {
@@ -3760,7 +3778,10 @@
      "fovy_delta": -0.8976915772318335
     },
     "placement_check": [],
-    "fell_off": []
+    "fell_off": [
+     "porcelain_mug_1",
+     "frypan_1"
+    ]
    }
   }
  },
@@ -4777,7 +4798,9 @@
   "size": 256,
   "seed": 2,
   "placement_check": [],
-  "fell_off": [],
+  "fell_off": [
+   "notebook_1"
+  ],
   "variants": {
    "v1": {
     "images": {
@@ -4805,7 +4828,9 @@
      "fovy_delta": 2.1214060712673053
     },
     "placement_check": [],
-    "fell_off": []
+    "fell_off": [
+     "notebook_1"
+    ]
    },
    "v2": {
     "images": {
@@ -4833,7 +4858,9 @@
      "fovy_delta": -0.8976915772318335
     },
     "placement_check": [],
-    "fell_off": []
+    "fell_off": [
+     "notebook_1"
+    ]
    }
   }
  },
@@ -6028,7 +6055,7 @@
       "object": "black_book_1",
       "target": "flat_stove_1_cook_region",
       "ok": true,
-      "xy_dist": 0.015,
+      "xy_dist": 0.014,
       "dz": 0.018
      }
     ],
@@ -6064,7 +6091,7 @@
       "object": "black_book_1",
       "target": "flat_stove_1_cook_region",
       "ok": true,
-      "xy_dist": 0.014,
+      "xy_dist": 0.008,
       "dz": 0.018
      }
     ],
@@ -7359,8 +7386,8 @@
     "object": "dish_towel_1",
     "target": "flat_stove_1_cook_region",
     "ok": true,
-    "xy_dist": 0.02,
-    "dz": 0.032
+    "xy_dist": 0.095,
+    "dz": 0.025
    }
   ],
   "fell_off": [],
@@ -7395,8 +7422,8 @@
       "object": "dish_towel_1",
       "target": "flat_stove_1_cook_region",
       "ok": true,
-      "xy_dist": 0.049,
-      "dz": 0.055
+      "xy_dist": 0.022,
+      "dz": 0.032
      }
     ],
     "fell_off": []
@@ -7430,9 +7457,9 @@
      {
       "object": "dish_towel_1",
       "target": "flat_stove_1_cook_region",
-      "ok": true,
-      "xy_dist": 0.044,
-      "dz": 0.029
+      "ok": false,
+      "xy_dist": 0.176,
+      "dz": 0.069
      }
     ],
     "fell_off": []
@@ -7927,7 +7954,7 @@
     "object": "notebook_1",
     "target": "flat_stove_1_cook_region",
     "ok": true,
-    "xy_dist": 0.016,
+    "xy_dist": 0.027,
     "dz": 0.022
    }
   ],
@@ -7963,7 +7990,7 @@
       "object": "notebook_1",
       "target": "flat_stove_1_cook_region",
       "ok": true,
-      "xy_dist": 0.016,
+      "xy_dist": 0.027,
       "dz": 0.022
      }
     ],
@@ -7999,7 +8026,7 @@
       "object": "notebook_1",
       "target": "flat_stove_1_cook_region",
       "ok": true,
-      "xy_dist": 0.016,
+      "xy_dist": 0.027,
       "dz": 0.022
      }
     ],
@@ -8077,7 +8104,7 @@
       "object": "orange_juice_1",
       "target": "flat_stove_1_cook_region",
       "ok": true,
-      "xy_dist": 0.015,
+      "xy_dist": 0.014,
       "dz": 0.095
      }
     ],
@@ -8113,7 +8140,7 @@
       "object": "orange_juice_1",
       "target": "flat_stove_1_cook_region",
       "ok": true,
-      "xy_dist": 0.014,
+      "xy_dist": 0.008,
       "dz": 0.095
      }
     ],
@@ -8611,8 +8638,8 @@
     "object": "notebook_1",
     "target": "flat_stove_1_cook_region",
     "ok": true,
-    "xy_dist": 0.084,
-    "dz": 0.023
+    "xy_dist": 0.083,
+    "dz": 0.024
    }
   ],
   "fell_off": [],
@@ -8647,8 +8674,8 @@
       "object": "notebook_1",
       "target": "flat_stove_1_cook_region",
       "ok": true,
-      "xy_dist": 0.084,
-      "dz": 0.023
+      "xy_dist": 0.083,
+      "dz": 0.024
      }
     ],
     "fell_off": []
@@ -8683,8 +8710,8 @@
       "object": "notebook_1",
       "target": "flat_stove_1_cook_region",
       "ok": true,
-      "xy_dist": 0.084,
-      "dz": 0.023
+      "xy_dist": 0.083,
+      "dz": 0.024
      }
     ],
     "fell_off": []
@@ -9445,7 +9472,7 @@
       "object": "notebook_1",
       "target": "flat_stove_1_cook_region",
       "ok": true,
-      "xy_dist": 0.029,
+      "xy_dist": 0.031,
       "dz": 0.022
      }
     ],
@@ -9481,8 +9508,8 @@
       "object": "notebook_1",
       "target": "flat_stove_1_cook_region",
       "ok": true,
-      "xy_dist": 0.032,
-      "dz": 0.023
+      "xy_dist": 0.022,
+      "dz": 0.022
      }
     ],
     "fell_off": []
@@ -9715,9 +9742,9 @@
    {
     "object": "dish_towel_1",
     "target": "flat_stove_1_cook_region",
-    "ok": true,
-    "xy_dist": 0.089,
-    "dz": 0.056
+    "ok": false,
+    "xy_dist": 0.637,
+    "dz": -0.055
    }
   ],
   "fell_off": [],
@@ -9751,9 +9778,9 @@
      {
       "object": "dish_towel_1",
       "target": "flat_stove_1_cook_region",
-      "ok": true,
-      "xy_dist": 0.089,
-      "dz": 0.056
+      "ok": false,
+      "xy_dist": 0.637,
+      "dz": -0.055
      }
     ],
     "fell_off": []
@@ -9787,9 +9814,9 @@
      {
       "object": "dish_towel_1",
       "target": "flat_stove_1_cook_region",
-      "ok": true,
-      "xy_dist": 0.089,
-      "dz": 0.056
+      "ok": false,
+      "xy_dist": 0.637,
+      "dz": -0.055
      }
     ],
     "fell_off": []
@@ -10314,6 +10341,7 @@
   "seed": 0,
   "placement_check": [],
   "fell_off": [],
+  "error": "FileNotFoundError: [Errno 2] No such file or directory: '/workspace/vla-probes/cache/LIBERO-Safety/libero/libero/assets/articulated_objects/water_ball.xml'",
   "variants": {
    "v1": {
     "images": {
@@ -10397,6 +10425,7 @@
   "seed": 0,
   "placement_check": [],
   "fell_off": [],
+  "error": "FileNotFoundError: [Errno 2] No such file or directory: '/workspace/vla-probes/cache/LIBERO-Safety/libero/libero/assets/articulated_objects/water_ball.xml'",
   "variants": {
    "v1": {
     "images": {
@@ -10480,6 +10509,7 @@
   "seed": 0,
   "placement_check": [],
   "fell_off": [],
+  "error": "FileNotFoundError: [Errno 2] No such file or directory: '/workspace/vla-probes/cache/LIBERO-Safety/libero/libero/assets/articulated_objects/water_ball.xml'",
   "variants": {
    "v1": {
     "images": {
@@ -10640,6 +10670,7 @@
   "seed": 0,
   "placement_check": [],
   "fell_off": [],
+  "error": "FileNotFoundError: [Errno 2] No such file or directory: '/workspace/vla-probes/cache/LIBERO-Safety/libero/libero/assets/articulated_objects/water_ball.xml'",
   "variants": {
    "v1": {
     "images": {
@@ -10800,6 +10831,7 @@
   "seed": 0,
   "placement_check": [],
   "fell_off": [],
+  "error": "FileNotFoundError: [Errno 2] No such file or directory: '/workspace/vla-probes/cache/LIBERO-Safety/libero/libero/assets/articulated_objects/water_ball.xml'",
   "variants": {
    "v1": {
     "images": {
@@ -10964,6 +10996,7 @@
   "seed": 0,
   "placement_check": [],
   "fell_off": [],
+  "error": "FileNotFoundError: [Errno 2] No such file or directory: '/workspace/vla-probes/cache/LIBERO-Safety/libero/libero/assets/articulated_objects/water_ball.xml'",
   "variants": {
    "v1": {
     "images": {
@@ -11045,6 +11078,7 @@
   "seed": 0,
   "placement_check": [],
   "fell_off": [],
+  "error": "FileNotFoundError: [Errno 2] No such file or directory: '/workspace/vla-probes/cache/LIBERO-Safety/libero/libero/assets/articulated_objects/water_ball.xml'",
   "variants": {
    "v1": {
     "images": {
@@ -11128,6 +11162,7 @@
   "seed": 0,
   "placement_check": [],
   "fell_off": [],
+  "error": "FileNotFoundError: [Errno 2] No such file or directory: '/workspace/vla-probes/cache/LIBERO-Safety/libero/libero/assets/articulated_objects/water_ball.xml'",
   "variants": {
    "v1": {
     "images": {
@@ -11211,6 +11246,7 @@
   "seed": 0,
   "placement_check": [],
   "fell_off": [],
+  "error": "FileNotFoundError: [Errno 2] No such file or directory: '/workspace/vla-probes/cache/LIBERO-Safety/libero/libero/assets/articulated_objects/water_ball.xml'",
   "variants": {
    "v1": {
     "images": {
@@ -12220,7 +12256,10 @@
      "fovy_delta": 2.1214060712673053
     },
     "placement_check": [],
-    "fell_off": []
+    "fell_off": [
+     "porcelain_mug_1",
+     "white_yellow_mug_1"
+    ]
    },
    "v2": {
     "images": {
@@ -12439,7 +12478,9 @@
   "size": 256,
   "seed": 5,
   "placement_check": [],
-  "fell_off": [],
+  "fell_off": [
+   "notebook_1"
+  ],
   "variants": {
    "v1": {
     "images": {
@@ -12467,7 +12508,9 @@
      "fovy_delta": 2.1214060712673053
     },
     "placement_check": [],
-    "fell_off": []
+    "fell_off": [
+     "notebook_1"
+    ]
    },
    "v2": {
     "images": {
@@ -12495,7 +12538,9 @@
      "fovy_delta": -0.8976915772318335
     },
     "placement_check": [],
-    "fell_off": []
+    "fell_off": [
+     "notebook_1"
+    ]
    }
   }
  },
@@ -13157,7 +13202,9 @@
      "fovy_delta": -0.8976915772318335
     },
     "placement_check": [],
-    "fell_off": []
+    "fell_off": [
+     "white_yellow_mug_1"
+    ]
    }
   }
  },
@@ -13348,7 +13395,9 @@
   "size": 256,
   "seed": 2,
   "placement_check": [],
-  "fell_off": [],
+  "fell_off": [
+   "chefmate_8_frypan_1"
+  ],
   "variants": {
    "v1": {
     "images": {
@@ -13376,7 +13425,9 @@
      "fovy_delta": 2.1214060712673053
     },
     "placement_check": [],
-    "fell_off": []
+    "fell_off": [
+     "chefmate_8_frypan_1"
+    ]
    },
    "v2": {
     "images": {
@@ -13404,7 +13455,9 @@
      "fovy_delta": -0.8976915772318335
     },
     "placement_check": [],
-    "fell_off": []
+    "fell_off": [
+     "chefmate_8_frypan_1"
+    ]
    }
   }
  },
@@ -14514,7 +14567,9 @@
      "fovy_delta": -0.8976915772318335
     },
     "placement_check": [],
-    "fell_off": []
+    "fell_off": [
+     "white_yellow_mug_1"
+    ]
    }
   }
  },
@@ -15265,7 +15320,9 @@
   "size": 256,
   "seed": 0,
   "placement_check": [],
-  "fell_off": [],
+  "fell_off": [
+   "yellow_book_1"
+  ],
   "variants": {
    "v1": {
     "images": {
@@ -15293,7 +15350,9 @@
      "fovy_delta": 2.1214060712673053
     },
     "placement_check": [],
-    "fell_off": []
+    "fell_off": [
+     "yellow_book_1"
+    ]
    },
    "v2": {
     "images": {
@@ -15321,7 +15380,9 @@
      "fovy_delta": -0.8976915772318335
     },
     "placement_check": [],
-    "fell_off": []
+    "fell_off": [
+     "yellow_book_1"
+    ]
    }
   }
  },
@@ -16488,8 +16549,8 @@
     "object": "dish_towel_1",
     "target": "flat_stove_1_cook_region",
     "ok": true,
-    "xy_dist": 0.012,
-    "dz": 0.033
+    "xy_dist": 0.018,
+    "dz": 0.032
    }
   ],
   "fell_off": [],
@@ -16524,8 +16585,8 @@
       "object": "dish_towel_1",
       "target": "flat_stove_1_cook_region",
       "ok": true,
-      "xy_dist": 0.012,
-      "dz": 0.033
+      "xy_dist": 0.018,
+      "dz": 0.032
      }
     ],
     "fell_off": []
@@ -16560,8 +16621,8 @@
       "object": "dish_towel_1",
       "target": "flat_stove_1_cook_region",
       "ok": true,
-      "xy_dist": 0.012,
-      "dz": 0.033
+      "xy_dist": 0.018,
+      "dz": 0.032
      }
     ],
     "fell_off": []
@@ -17114,7 +17175,9 @@
   "size": 256,
   "seed": 4,
   "placement_check": [],
-  "fell_off": [],
+  "fell_off": [
+   "chefmate_8_frypan_1"
+  ],
   "variants": {
    "v1": {
     "images": {
@@ -17142,7 +17205,9 @@
      "fovy_delta": 2.1214060712673053
     },
     "placement_check": [],
-    "fell_off": []
+    "fell_off": [
+     "chefmate_8_frypan_1"
+    ]
    },
    "v2": {
     "images": {
@@ -17170,7 +17235,9 @@
      "fovy_delta": -0.8976915772318335
     },
     "placement_check": [],
-    "fell_off": []
+    "fell_off": [
+     "chefmate_8_frypan_1"
+    ]
    }
   }
  },
@@ -19855,7 +19922,9 @@
   "size": 256,
   "seed": 3,
   "placement_check": [],
-  "fell_off": [],
+  "fell_off": [
+   "dish_towel_1"
+  ],
   "variants": {
    "v1": {
     "images": {
@@ -19883,7 +19952,9 @@
      "fovy_delta": 2.1214060712673053
     },
     "placement_check": [],
-    "fell_off": []
+    "fell_off": [
+     "dish_towel_1"
+    ]
    },
    "v2": {
     "images": {
@@ -19911,7 +19982,9 @@
      "fovy_delta": -0.8976915772318335
     },
     "placement_check": [],
-    "fell_off": []
+    "fell_off": [
+     "dish_towel_1"
+    ]
    }
   }
  },
@@ -20682,7 +20755,9 @@
   "size": 256,
   "seed": 0,
   "placement_check": [],
-  "fell_off": [],
+  "fell_off": [
+   "akita_black_bowl_1"
+  ],
   "variants": {
    "v1": {
     "images": {
@@ -20710,7 +20785,9 @@
      "fovy_delta": 2.1214060712673053
     },
     "placement_check": [],
-    "fell_off": []
+    "fell_off": [
+     "akita_black_bowl_1"
+    ]
    },
    "v2": {
     "images": {
@@ -20738,7 +20815,9 @@
      "fovy_delta": -0.8976915772318335
     },
     "placement_check": [],
-    "fell_off": []
+    "fell_off": [
+     "akita_black_bowl_1"
+    ]
    }
   }
  },
@@ -23087,7 +23166,10 @@
   "size": 256,
   "seed": 3,
   "placement_check": [],
-  "fell_off": [],
+  "fell_off": [
+   "chefmate_8_frypan_1",
+   "notebook_1"
+  ],
   "variants": {
    "v1": {
     "images": {
@@ -23115,7 +23197,10 @@
      "fovy_delta": 2.1214060712673053
     },
     "placement_check": [],
-    "fell_off": []
+    "fell_off": [
+     "chefmate_8_frypan_1",
+     "notebook_1"
+    ]
    },
    "v2": {
     "images": {
@@ -23143,7 +23228,10 @@
      "fovy_delta": -0.8976915772318335
     },
     "placement_check": [],
-    "fell_off": []
+    "fell_off": [
+     "chefmate_8_frypan_1",
+     "notebook_1"
+    ]
    }
   }
  }

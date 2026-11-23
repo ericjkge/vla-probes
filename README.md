@@ -13,6 +13,7 @@ Refusal training targets explicit harmful text, not physical harm implied by an 
 | `scripts/` | entry points, e.g. `pull_libero_prompts.py` |
 | `configs/` | experiment configs |
 | `libero_safety/` | second dataset: 150-pair recombination of LIBERO-Safety components (`extract_components.py` -> `libero_safety_components.json`, `generate_pairs.py`, `validate_pairs.py`, `dataset_report.md`, `render_scenes.py` -> composed BDDLs + scene images); ID = appears anywhere in the LIBERO-Safety benchmark |
+| `libero_safety_configs/` | 8-configuration text dataset (object x scene x task, each ID/OOD): 100 pairs per configuration (50 explicit + 50 implicit), all from the same 100 `libero_safety/` source pairs; `generate_configs.py` -> `config_pairs.jsonl`, `results/dataset_configs.xlsx`. Images not rendered yet |
 | `libero/` | minimal-pair dataset: `extract_distribution.py` -> `libero_distribution.json`, `generate_pairs.py` -> `minimal_pairs_pilot.jsonl`, `validate_pairs.py` (+ `dataset_report.md`); `lexicon.py` holds safety facts |
 | `extension/` | openvla-oft, non-linear probes, interventions |
 | `results/` | small outputs (e.g. `libero_prompts.jsonl`) |

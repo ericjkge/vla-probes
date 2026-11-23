@@ -1,0 +1,1190 @@
+{
+ "carafe__1": {
+  "load": true,
+  "slid_cm": 0.6,
+  "fell_off": false,
+  "size_cm": 117.2,
+  "others_moved_cm": 24.2,
+  "z_above_table_cm": 13.5,
+  "placed": [
+   "carafe__1_1 placed on table at (-0.16,0.00)"
+  ],
+  "image": "libero_safety_ood/screen/carafe__1.png",
+  "role": "fragile",
+  "verdict": "check: knocks other objects (24.2 cm), size 117.2 cm"
+ },
+ "carafe__2": {
+  "load": true,
+  "slid_cm": 32.2,
+  "fell_off": false,
+  "size_cm": 130.1,
+  "others_moved_cm": 72.4,
+  "z_above_table_cm": -14.3,
+  "placed": [
+   "carafe__2_1 placed on table at (-0.16,0.00)"
+  ],
+  "image": "libero_safety_ood/screen/carafe__2.png",
+  "role": "fragile",
+  "verdict": "check: slid 32.2 cm, knocks other objects (72.4 cm), size 130.1 cm"
+ },
+ "coffee_cup__1": {
+  "load": true,
+  "slid_cm": 5.2,
+  "fell_off": false,
+  "size_cm": 115.8,
+  "others_moved_cm": 593.3,
+  "z_above_table_cm": 111.3,
+  "placed": [
+   "coffee_cup__1_1 placed on table at (-0.16,0.00)"
+  ],
+  "image": "libero_safety_ood/screen/coffee_cup__1.png",
+  "role": "fragile",
+  "verdict": "check: knocks other objects (593.3 cm), size 115.8 cm"
+ },
+ "coffee_cup__2": {
+  "load": true,
+  "slid_cm": 4.6,
+  "fell_off": false,
+  "size_cm": 125.2,
+  "others_moved_cm": 94.8,
+  "z_above_table_cm": 77.8,
+  "placed": [
+   "coffee_cup__2_1 placed on table at (-0.16,0.00)"
+  ],
+  "image": "libero_safety_ood/screen/coffee_cup__2.png",
+  "role": "fragile",
+  "verdict": "check: knocks other objects (94.8 cm), size 125.2 cm"
+ },
+ "beaker__1": {
+  "load": true,
+  "slid_cm": 7.2,
+  "fell_off": false,
+  "size_cm": 126.7,
+  "others_moved_cm": 16.3,
+  "z_above_table_cm": 18.3,
+  "placed": [
+   "beaker__1_1 placed on table at (-0.16,0.00)"
+  ],
+  "image": "libero_safety_ood/screen/beaker__1.png",
+  "role": "fragile",
+  "verdict": "check: knocks other objects (16.3 cm), size 126.7 cm"
+ },
+ "cream_pitcher__1": {
+  "load": true,
+  "slid_cm": 112.9,
+  "fell_off": false,
+  "size_cm": 161.3,
+  "others_moved_cm": 7.0,
+  "z_above_table_cm": 34.0,
+  "placed": [
+   "cream_pitcher__1_1 placed on table at (-0.16,0.00)"
+  ],
+  "image": "libero_safety_ood/screen/cream_pitcher__1.png",
+  "role": "fragile",
+  "verdict": "check: slid 112.9 cm, size 161.3 cm"
+ },
+ "cruet": {
+  "load": true,
+  "slid_cm": 11.2,
+  "fell_off": false,
+  "size_cm": 111.8,
+  "others_moved_cm": 44.3,
+  "z_above_table_cm": 9.6,
+  "placed": [
+   "cruet_1 placed on table at (-0.16,0.00)"
+  ],
+  "image": "libero_safety_ood/screen/cruet.png",
+  "role": "fragile",
+  "verdict": "check: knocks other objects (44.3 cm), size 111.8 cm"
+ },
+ "ashtray__1": {
+  "load": true,
+  "slid_cm": 113.3,
+  "fell_off": false,
+  "size_cm": 148.5,
+  "others_moved_cm": 141.9,
+  "z_above_table_cm": 97.7,
+  "placed": [
+   "ashtray__1_1 placed on table at (-0.16,0.00)"
+  ],
+  "image": "libero_safety_ood/screen/ashtray__1.png",
+  "role": "fragile",
+  "verdict": "check: slid 113.3 cm, knocks other objects (141.9 cm), size 148.5 cm"
+ },
+ "candle_holder__1": {
+  "load": true,
+  "slid_cm": 23.1,
+  "fell_off": false,
+  "size_cm": 33.4,
+  "others_moved_cm": 12.3,
+  "z_above_table_cm": 2.4,
+  "placed": [
+   "candle_holder__1_1 placed on table at (-0.16,0.00)"
+  ],
+  "image": "libero_safety_ood/screen/candle_holder__1.png",
+  "role": "fragile",
+  "verdict": "check: slid 23.1 cm, knocks other objects (12.3 cm)"
+ },
+ "basil_jar": {
+  "load": true,
+  "slid_cm": 8.6,
+  "fell_off": false,
+  "size_cm": 143.8,
+  "others_moved_cm": 123.9,
+  "z_above_table_cm": 93.3,
+  "placed": [
+   "basil_jar_1 placed on table at (-0.16,0.00)"
+  ],
+  "image": "libero_safety_ood/screen/basil_jar.png",
+  "role": "fragile",
+  "verdict": "check: knocks other objects (123.9 cm), size 143.8 cm"
+ },
+ "coffee_bean_jar": {
+  "load": true,
+  "slid_cm": 470.1,
+  "fell_off": false,
+  "size_cm": 158.4,
+  "others_moved_cm": 461.7,
+  "z_above_table_cm": -8.2,
+  "placed": [
+   "coffee_bean_jar_1 placed on table at (-0.16,0.00)"
+  ],
+  "image": "libero_safety_ood/screen/coffee_bean_jar.png",
+  "role": "fragile",
+  "verdict": "check: slid 470.1 cm, knocks other objects (461.7 cm), size 158.4 cm"
+ },
+ "bowl__1": {
+  "load": true,
+  "slid_cm": 10.1,
+  "fell_off": false,
+  "size_cm": 133.1,
+  "others_moved_cm": 38.2,
+  "z_above_table_cm": 20.5,
+  "placed": [
+   "bowl__1_1 placed on table at (-0.16,0.00)"
+  ],
+  "image": "libero_safety_ood/screen/bowl__1.png",
+  "role": "fragile",
+  "verdict": "check: knocks other objects (38.2 cm), size 133.1 cm"
+ },
+ "bowl__2": {
+  "load": true,
+  "slid_cm": 13.6,
+  "fell_off": false,
+  "size_cm": 116.6,
+  "others_moved_cm": 25.2,
+  "z_above_table_cm": 20.2,
+  "placed": [
+   "bowl__2_1 placed on table at (-0.16,0.00)"
+  ],
+  "image": "libero_safety_ood/screen/bowl__2.png",
+  "role": "fragile",
+  "verdict": "check: knocks other objects (25.2 cm), size 116.6 cm"
+ },
+ "charger": {
+  "load": true,
+  "slid_cm": 41.8,
+  "fell_off": false,
+  "size_cm": 4.7,
+  "others_moved_cm": 7.1,
+  "z_above_table_cm": -1.0,
+  "placed": [
+   "charger_1 placed on table at (-0.16,0.00)"
+  ],
+  "image": "libero_safety_ood/screen/charger.png",
+  "role": "electronic",
+  "verdict": "check: slid 41.8 cm"
+ },
+ "boxed_router": {
+  "load": true,
+  "slid_cm": 9.7,
+  "fell_off": false,
+  "size_cm": 49.9,
+  "others_moved_cm": 19.4,
+  "z_above_table_cm": 17.8,
+  "placed": [
+   "boxed_router_1 placed on table at (-0.16,0.00)"
+  ],
+  "image": "libero_safety_ood/screen/boxed_router.png",
+  "role": "electronic",
+  "verdict": "check: knocks other objects (19.4 cm), size 49.9 cm"
+ },
+ "credit_card_terminal": {
+  "load": true,
+  "slid_cm": 3.7,
+  "fell_off": false,
+  "size_cm": 22.8,
+  "others_moved_cm": 7.1,
+  "z_above_table_cm": -0.3,
+  "placed": [
+   "credit_card_terminal_1 placed on table at (-0.16,0.00)"
+  ],
+  "image": "libero_safety_ood/screen/credit_card_terminal.png",
+  "role": "electronic",
+  "verdict": "ok"
+ },
+ "alarm_clock__1": {
+  "load": true,
+  "slid_cm": 11.5,
+  "fell_off": false,
+  "size_cm": 22.8,
+  "others_moved_cm": 7.1,
+  "z_above_table_cm": -3.8,
+  "placed": [
+   "alarm_clock__1_1 placed on table at (-0.16,0.00)"
+  ],
+  "image": "libero_safety_ood/screen/alarm_clock__1.png",
+  "role": "electronic",
+  "verdict": "ok"
+ },
+ "alarm_clock__2": {
+  "load": true,
+  "slid_cm": 87.7,
+  "fell_off": true,
+  "size_cm": 18.3,
+  "others_moved_cm": 7.1,
+  "z_above_table_cm": -94.7,
+  "placed": [
+   "alarm_clock__2_1 placed on table at (-0.16,0.00)"
+  ],
+  "image": "libero_safety_ood/screen/alarm_clock__2.png",
+  "role": "electronic",
+  "verdict": "check: fell off, slid 87.7 cm"
+ },
+ "box_of_tissues__1": {
+  "load": true,
+  "slid_cm": 1.1,
+  "fell_off": false,
+  "size_cm": 13.2,
+  "others_moved_cm": 7.1,
+  "z_above_table_cm": -0.1,
+  "placed": [
+   "box_of_tissues__1_1 placed on table at (-0.16,0.00)"
+  ],
+  "image": "libero_safety_ood/screen/box_of_tissues__1.png",
+  "role": "combustible",
+  "verdict": "ok"
+ },
+ "box_of_cereal__1": {
+  "load": true,
+  "slid_cm": 11.4,
+  "fell_off": false,
+  "size_cm": 30.2,
+  "others_moved_cm": 7.1,
+  "z_above_table_cm": -2.4,
+  "placed": [
+   "box_of_cereal__1_1 placed on table at (-0.16,0.00)"
+  ],
+  "image": "libero_safety_ood/screen/box_of_cereal__1.png",
+  "role": "combustible",
+  "verdict": "ok"
+ },
+ "box_of_corn_flakes": {
+  "load": true,
+  "slid_cm": 35.9,
+  "fell_off": false,
+  "size_cm": 41.9,
+  "others_moved_cm": 7.1,
+  "z_above_table_cm": 4.0,
+  "placed": [
+   "box_of_corn_flakes_1 placed on table at (-0.16,0.00)"
+  ],
+  "image": "libero_safety_ood/screen/box_of_corn_flakes.png",
+  "role": "combustible",
+  "verdict": "check: slid 35.9 cm"
+ },
+ "box_of_crackers": {
+  "load": true,
+  "slid_cm": 10.9,
+  "fell_off": false,
+  "size_cm": 22.6,
+  "others_moved_cm": 7.6,
+  "z_above_table_cm": 1.1,
+  "placed": [
+   "box_of_crackers_1 placed on table at (-0.16,0.00)"
+  ],
+  "image": "libero_safety_ood/screen/box_of_crackers.png",
+  "role": "combustible",
+  "verdict": "ok"
+ },
+ "bag_of_chips__1": {
+  "load": true,
+  "slid_cm": 4.9,
+  "fell_off": false,
+  "size_cm": 33.8,
+  "others_moved_cm": 8.7,
+  "z_above_table_cm": -0.9,
+  "placed": [
+   "bag_of_chips__1_1 placed on table at (-0.16,0.00)"
+  ],
+  "image": "libero_safety_ood/screen/bag_of_chips__1.png",
+  "role": "combustible",
+  "verdict": "ok"
+ },
+ "bag_of_popcorn__1": {
+  "load": true,
+  "slid_cm": 11.8,
+  "fell_off": false,
+  "size_cm": 29.8,
+  "others_moved_cm": 8.8,
+  "z_above_table_cm": -0.4,
+  "placed": [
+   "bag_of_popcorn__1_1 placed on table at (-0.16,0.00)"
+  ],
+  "image": "libero_safety_ood/screen/bag_of_popcorn__1.png",
+  "role": "combustible",
+  "verdict": "ok"
+ },
+ "comic_book__1": {
+  "load": true,
+  "slid_cm": 8.6,
+  "fell_off": false,
+  "size_cm": 23.6,
+  "others_moved_cm": 7.1,
+  "z_above_table_cm": -5.6,
+  "placed": [
+   "comic_book__1_1 placed on table at (-0.16,0.00)"
+  ],
+  "image": "libero_safety_ood/screen/comic_book__1.png",
+  "role": "combustible",
+  "verdict": "ok"
+ },
+ "catalog__1": {
+  "load": true,
+  "slid_cm": 26.2,
+  "fell_off": false,
+  "size_cm": 36.8,
+  "others_moved_cm": 33.4,
+  "z_above_table_cm": -3.5,
+  "placed": [
+   "catalog__1_1 placed on table at (-0.16,0.00)"
+  ],
+  "image": "libero_safety_ood/screen/catalog__1.png",
+  "role": "combustible",
+  "verdict": "check: slid 26.2 cm, knocks other objects (33.4 cm)"
+ },
+ "calendar": {
+  "load": true,
+  "slid_cm": 12.4,
+  "fell_off": false,
+  "size_cm": 35.0,
+  "others_moved_cm": 22.9,
+  "z_above_table_cm": 1.1,
+  "placed": [
+   "calendar_1 placed on table at (-0.16,0.00)"
+  ],
+  "image": "libero_safety_ood/screen/calendar.png",
+  "role": "combustible",
+  "verdict": "check: knocks other objects (22.9 cm)"
+ },
+ "cardstock": {
+  "load": true,
+  "slid_cm": 0.4,
+  "fell_off": false,
+  "size_cm": 44.6,
+  "others_moved_cm": 7.1,
+  "z_above_table_cm": -3.4,
+  "placed": [
+   "cardstock_1 placed on table at (-0.16,0.00)"
+  ],
+  "image": "libero_safety_ood/screen/cardstock.png",
+  "role": "combustible",
+  "verdict": "ok"
+ },
+ "clipboard__1": {
+  "load": true,
+  "slid_cm": 18.7,
+  "fell_off": false,
+  "size_cm": 39.8,
+  "others_moved_cm": 10.6,
+  "z_above_table_cm": -4.6,
+  "placed": [
+   "clipboard__1_1 placed on table at (-0.16,0.00)"
+  ],
+  "image": "libero_safety_ood/screen/clipboard__1.png",
+  "role": "combustible",
+  "verdict": "check: slid 18.7 cm, knocks other objects (10.6 cm)"
+ },
+ "can_of_beans__1": {
+  "load": true,
+  "slid_cm": 106.1,
+  "fell_off": true,
+  "size_cm": 12.8,
+  "others_moved_cm": 7.1,
+  "z_above_table_cm": -92.4,
+  "placed": [
+   "can_of_beans__1_1 placed on table at (-0.16,0.00)"
+  ],
+  "image": "libero_safety_ood/screen/can_of_beans__1.png",
+  "role": "metal",
+  "verdict": "check: fell off, slid 106.1 cm"
+ },
+ "can_of_corn__1": {
+  "load": true,
+  "slid_cm": 39.0,
+  "fell_off": false,
+  "size_cm": 12.4,
+  "others_moved_cm": 7.1,
+  "z_above_table_cm": -3.4,
+  "placed": [
+   "can_of_corn__1_1 placed on table at (-0.16,0.00)"
+  ],
+  "image": "libero_safety_ood/screen/can_of_corn__1.png",
+  "role": "metal",
+  "verdict": "check: slid 39.0 cm"
+ },
+ "can_of_sardines": {
+  "load": true,
+  "slid_cm": 0.7,
+  "fell_off": false,
+  "size_cm": 11.8,
+  "others_moved_cm": 7.1,
+  "z_above_table_cm": -1.0,
+  "placed": [
+   "can_of_sardines_1 placed on table at (-0.16,0.00)"
+  ],
+  "image": "libero_safety_ood/screen/can_of_sardines.png",
+  "role": "metal",
+  "verdict": "ok"
+ },
+ "can_of_tomatoes": {
+  "load": true,
+  "slid_cm": 1.1,
+  "fell_off": false,
+  "size_cm": 12.1,
+  "others_moved_cm": 7.1,
+  "z_above_table_cm": -0.9,
+  "placed": [
+   "can_of_tomatoes_1 placed on table at (-0.16,0.00)"
+  ],
+  "image": "libero_safety_ood/screen/can_of_tomatoes.png",
+  "role": "metal",
+  "verdict": "ok"
+ },
+ "cat_food_tin": {
+  "load": true,
+  "slid_cm": 6.1,
+  "fell_off": false,
+  "size_cm": 126.5,
+  "others_moved_cm": 97.1,
+  "z_above_table_cm": 33.2,
+  "placed": [
+   "cat_food_tin_1 placed on table at (-0.16,0.00)"
+  ],
+  "image": "libero_safety_ood/screen/cat_food_tin.png",
+  "role": "metal",
+  "verdict": "check: knocks other objects (97.1 cm), size 126.5 cm"
+ },
+ "copper_pot": {
+  "load": true,
+  "slid_cm": 0.9,
+  "fell_off": false,
+  "size_cm": 215.2,
+  "others_moved_cm": 86.0,
+  "z_above_table_cm": 25.6,
+  "placed": [
+   "copper_pot_1 placed on table at (-0.16,0.00)"
+  ],
+  "image": "libero_safety_ood/screen/copper_pot.png",
+  "role": "metal",
+  "verdict": "check: knocks other objects (86.0 cm), size 215.2 cm"
+ },
+ "box_of_aluminium_foil": {
+  "load": true,
+  "slid_cm": 30.2,
+  "fell_off": false,
+  "size_cm": 50.3,
+  "others_moved_cm": 11.1,
+  "z_above_table_cm": 0.2,
+  "placed": [
+   "box_of_aluminium_foil_1 placed on table at (-0.16,0.00)"
+  ],
+  "image": "libero_safety_ood/screen/box_of_aluminium_foil.png",
+  "role": "metal",
+  "verdict": "check: slid 30.2 cm, knocks other objects (11.1 cm), size 50.3 cm"
+ },
+ "corkscrew": {
+  "load": true,
+  "slid_cm": 8.0,
+  "fell_off": false,
+  "size_cm": 13.3,
+  "others_moved_cm": 7.1,
+  "z_above_table_cm": -5.6,
+  "placed": [
+   "corkscrew_1 placed on table at (-0.16,0.00)"
+  ],
+  "image": "libero_safety_ood/screen/corkscrew.png",
+  "role": "metal",
+  "verdict": "ok"
+ },
+ "allen_wrench": {
+  "load": true,
+  "slid_cm": 0.0,
+  "fell_off": false,
+  "size_cm": 15.5,
+  "others_moved_cm": 7.1,
+  "z_above_table_cm": -6.1,
+  "placed": [
+   "allen_wrench_1 placed on table at (-0.16,0.00)"
+  ],
+  "image": "libero_safety_ood/screen/allen_wrench.png",
+  "role": "metal",
+  "verdict": "ok"
+ },
+ "apricot": {
+  "load": true,
+  "slid_cm": 0.7,
+  "fell_off": false,
+  "size_cm": 12.4,
+  "others_moved_cm": 7.1,
+  "z_above_table_cm": -1.9,
+  "placed": [
+   "apricot_1 placed on table at (-0.16,0.00)"
+  ],
+  "image": "libero_safety_ood/screen/apricot.png",
+  "role": "food",
+  "verdict": "ok"
+ },
+ "avocado": {
+  "load": true,
+  "slid_cm": 26.7,
+  "fell_off": false,
+  "size_cm": 15.2,
+  "others_moved_cm": 7.1,
+  "z_above_table_cm": -2.9,
+  "placed": [
+   "avocado_1 placed on table at (-0.16,0.00)"
+  ],
+  "image": "libero_safety_ood/screen/avocado.png",
+  "role": "food",
+  "verdict": "check: slid 26.7 cm"
+ },
+ "bell_pepper__1": {
+  "load": true,
+  "slid_cm": 11.4,
+  "fell_off": false,
+  "size_cm": 12.6,
+  "others_moved_cm": 7.1,
+  "z_above_table_cm": -3.6,
+  "placed": [
+   "bell_pepper__1_1 placed on table at (-0.16,0.00)"
+  ],
+  "image": "libero_safety_ood/screen/bell_pepper__1.png",
+  "role": "food",
+  "verdict": "ok"
+ },
+ "cucumber": {
+  "load": true,
+  "slid_cm": 1.9,
+  "fell_off": false,
+  "size_cm": 13.5,
+  "others_moved_cm": 7.1,
+  "z_above_table_cm": -4.5,
+  "placed": [
+   "cucumber_1 placed on table at (-0.16,0.00)"
+  ],
+  "image": "libero_safety_ood/screen/cucumber.png",
+  "role": "food",
+  "verdict": "ok"
+ },
+ "carrot__1": {
+  "load": true,
+  "slid_cm": 8.7,
+  "fell_off": false,
+  "size_cm": 26.0,
+  "others_moved_cm": 7.1,
+  "z_above_table_cm": -4.5,
+  "placed": [
+   "carrot__1_1 placed on table at (-0.16,0.00)"
+  ],
+  "image": "libero_safety_ood/screen/carrot__1.png",
+  "role": "food",
+  "verdict": "ok"
+ },
+ "cupcake__1": {
+  "load": true,
+  "slid_cm": 9.2,
+  "fell_off": false,
+  "size_cm": 9.4,
+  "others_moved_cm": 7.1,
+  "z_above_table_cm": -4.5,
+  "placed": [
+   "cupcake__1_1 placed on table at (-0.16,0.00)"
+  ],
+  "image": "libero_safety_ood/screen/cupcake__1.png",
+  "role": "food",
+  "verdict": "ok"
+ },
+ "bread_slice__1": {
+  "load": true,
+  "slid_cm": 4.3,
+  "fell_off": false,
+  "size_cm": 21.5,
+  "others_moved_cm": 4.9,
+  "z_above_table_cm": -4.8,
+  "placed": [
+   "bread_slice__1_1 placed on table at (-0.16,0.00)"
+  ],
+  "image": "libero_safety_ood/screen/bread_slice__1.png",
+  "role": "food",
+  "verdict": "ok"
+ },
+ "bottle_of_olive_oil__1": {
+  "load": true,
+  "slid_cm": 17.7,
+  "fell_off": false,
+  "size_cm": 31.2,
+  "others_moved_cm": 7.9,
+  "z_above_table_cm": 1.1,
+  "placed": [
+   "bottle_of_olive_oil__1_1 placed on table at (-0.16,0.00)"
+  ],
+  "image": "libero_safety_ood/screen/bottle_of_olive_oil__1.png",
+  "role": "fragile_batch2",
+  "verdict": "check: slid 17.7 cm"
+ },
+ "bottle_of_olive_oil__2": {
+  "load": true,
+  "slid_cm": 43.7,
+  "fell_off": false,
+  "size_cm": 21.0,
+  "others_moved_cm": 7.1,
+  "z_above_table_cm": -4.2,
+  "placed": [
+   "bottle_of_olive_oil__2_1 placed on table at (-0.16,0.00)"
+  ],
+  "image": "libero_safety_ood/screen/bottle_of_olive_oil__2.png",
+  "role": "fragile_batch2",
+  "verdict": "check: slid 43.7 cm"
+ },
+ "bottle_of_vinegar": {
+  "load": true,
+  "slid_cm": 112.3,
+  "fell_off": true,
+  "size_cm": 16.5,
+  "others_moved_cm": 7.1,
+  "z_above_table_cm": -94.8,
+  "placed": [
+   "bottle_of_vinegar_1 placed on table at (-0.16,0.00)"
+  ],
+  "image": "libero_safety_ood/screen/bottle_of_vinegar.png",
+  "role": "fragile_batch2",
+  "verdict": "check: fell off, slid 112.3 cm"
+ },
+ "bottle_of_soy_sauce": {
+  "load": true,
+  "slid_cm": 1.2,
+  "fell_off": false,
+  "size_cm": 21.5,
+  "others_moved_cm": 7.1,
+  "z_above_table_cm": 2.7,
+  "placed": [
+   "bottle_of_soy_sauce_1 placed on table at (-0.16,0.00)"
+  ],
+  "image": "libero_safety_ood/screen/bottle_of_soy_sauce.png",
+  "role": "fragile_batch2",
+  "verdict": "ok"
+ },
+ "bottle_of_hot_sauce": {
+  "load": true,
+  "slid_cm": 17.9,
+  "fell_off": false,
+  "size_cm": 18.7,
+  "others_moved_cm": 7.1,
+  "z_above_table_cm": -4.3,
+  "placed": [
+   "bottle_of_hot_sauce_1 placed on table at (-0.16,0.00)"
+  ],
+  "image": "libero_safety_ood/screen/bottle_of_hot_sauce.png",
+  "role": "fragile_batch2",
+  "verdict": "check: slid 17.9 cm"
+ },
+ "bottle_of_maple_syrup": {
+  "load": true,
+  "slid_cm": 87.0,
+  "fell_off": true,
+  "size_cm": 20.6,
+  "others_moved_cm": 7.1,
+  "z_above_table_cm": -92.1,
+  "placed": [
+   "bottle_of_maple_syrup_1 placed on table at (-0.16,0.00)"
+  ],
+  "image": "libero_safety_ood/screen/bottle_of_maple_syrup.png",
+  "role": "fragile_batch2",
+  "verdict": "check: fell off, slid 87.0 cm"
+ },
+ "bottle_of_gin": {
+  "load": true,
+  "slid_cm": 0.0,
+  "fell_off": false,
+  "size_cm": 29.1,
+  "others_moved_cm": 7.1,
+  "z_above_table_cm": 5.4,
+  "placed": [
+   "bottle_of_gin_1 placed on table at (-0.16,0.00)"
+  ],
+  "image": "libero_safety_ood/screen/bottle_of_gin.png",
+  "role": "fragile_batch2",
+  "verdict": "ok"
+ },
+ "bottle_of_tonic__1": {
+  "load": true,
+  "slid_cm": 1.0,
+  "fell_off": false,
+  "size_cm": 24.9,
+  "others_moved_cm": 7.1,
+  "z_above_table_cm": 4.4,
+  "placed": [
+   "bottle_of_tonic__1_1 placed on table at (-0.16,0.00)"
+  ],
+  "image": "libero_safety_ood/screen/bottle_of_tonic__1.png",
+  "role": "fragile_batch2",
+  "verdict": "ok"
+ },
+ "bottle_of_sesame_oil": {
+  "load": true,
+  "slid_cm": 0.0,
+  "fell_off": false,
+  "size_cm": 28.2,
+  "others_moved_cm": 7.1,
+  "z_above_table_cm": 5.2,
+  "placed": [
+   "bottle_of_sesame_oil_1 placed on table at (-0.16,0.00)"
+  ],
+  "image": "libero_safety_ood/screen/bottle_of_sesame_oil.png",
+  "role": "fragile_batch2",
+  "verdict": "ok"
+ },
+ "bottle_of_cooking_oil": {
+  "load": true,
+  "slid_cm": 99.5,
+  "fell_off": true,
+  "size_cm": 22.2,
+  "others_moved_cm": 7.1,
+  "z_above_table_cm": -92.7,
+  "placed": [
+   "bottle_of_cooking_oil_1 placed on table at (-0.16,0.00)"
+  ],
+  "image": "libero_safety_ood/screen/bottle_of_cooking_oil.png",
+  "role": "fragile_batch2",
+  "verdict": "check: fell off, slid 99.5 cm"
+ },
+ "cola_bottle": {
+  "load": true,
+  "slid_cm": 20.3,
+  "fell_off": false,
+  "size_cm": 124.6,
+  "others_moved_cm": 106.8,
+  "z_above_table_cm": 117.7,
+  "placed": [
+   "cola_bottle_1 placed on table at (-0.16,0.00)"
+  ],
+  "image": "libero_safety_ood/screen/cola_bottle.png",
+  "role": "fragile_batch2",
+  "verdict": "check: slid 20.3 cm, knocks other objects (106.8 cm), size 124.6 cm"
+ },
+ "bottle_of_lemonade": {
+  "load": true,
+  "slid_cm": 148.9,
+  "fell_off": true,
+  "size_cm": 19.3,
+  "others_moved_cm": 7.1,
+  "z_above_table_cm": -94.8,
+  "placed": [
+   "bottle_of_lemonade_1 placed on table at (-0.16,0.00)"
+  ],
+  "image": "libero_safety_ood/screen/bottle_of_lemonade.png",
+  "role": "fragile_batch2",
+  "verdict": "check: fell off, slid 148.9 cm"
+ },
+ "bottle_of_apple_juice": {
+  "load": true,
+  "slid_cm": 0.0,
+  "fell_off": false,
+  "size_cm": 21.1,
+  "others_moved_cm": 7.1,
+  "z_above_table_cm": -0.6,
+  "placed": [
+   "bottle_of_apple_juice_1 placed on table at (-0.16,0.00)"
+  ],
+  "image": "libero_safety_ood/screen/bottle_of_apple_juice.png",
+  "role": "fragile_batch2",
+  "verdict": "ok"
+ },
+ "coffee_cup__3": {
+  "load": true,
+  "slid_cm": 10.7,
+  "fell_off": false,
+  "size_cm": 127.3,
+  "others_moved_cm": 37.8,
+  "z_above_table_cm": 36.4,
+  "placed": [
+   "coffee_cup__3_1 placed on table at (-0.16,0.00)"
+  ],
+  "image": "libero_safety_ood/screen/coffee_cup__3.png",
+  "role": "fragile_batch2",
+  "verdict": "check: knocks other objects (37.8 cm), size 127.3 cm"
+ },
+ "coffee_cup__4": {
+  "load": true,
+  "slid_cm": 4.8,
+  "fell_off": false,
+  "size_cm": 116.9,
+  "others_moved_cm": 9.2,
+  "z_above_table_cm": 26.5,
+  "placed": [
+   "coffee_cup__4_1 placed on table at (-0.16,0.00)"
+  ],
+  "image": "libero_safety_ood/screen/coffee_cup__4.png",
+  "role": "fragile_batch2",
+  "verdict": "check: size 116.9 cm"
+ },
+ "coffee_cup__5": {
+  "load": true,
+  "slid_cm": 29.9,
+  "fell_off": false,
+  "size_cm": 121.2,
+  "others_moved_cm": 62.2,
+  "z_above_table_cm": 21.8,
+  "placed": [
+   "coffee_cup__5_1 placed on table at (-0.16,0.00)"
+  ],
+  "image": "libero_safety_ood/screen/coffee_cup__5.png",
+  "role": "fragile_batch2",
+  "verdict": "check: slid 29.9 cm, knocks other objects (62.2 cm), size 121.2 cm"
+ },
+ "coffee_cup__6": {
+  "load": true,
+  "slid_cm": 5.3,
+  "fell_off": false,
+  "size_cm": 132.8,
+  "others_moved_cm": 22.8,
+  "z_above_table_cm": 6.0,
+  "placed": [
+   "coffee_cup__6_1 placed on table at (-0.16,0.00)"
+  ],
+  "image": "libero_safety_ood/screen/coffee_cup__6.png",
+  "role": "fragile_batch2",
+  "verdict": "check: knocks other objects (22.8 cm), size 132.8 cm"
+ },
+ "bowl__3": {
+  "load": true,
+  "slid_cm": 15.3,
+  "fell_off": false,
+  "size_cm": 145.1,
+  "others_moved_cm": 109.5,
+  "z_above_table_cm": 22.8,
+  "placed": [
+   "bowl__3_1 placed on table at (-0.16,0.00)"
+  ],
+  "image": "libero_safety_ood/screen/bowl__3.png",
+  "role": "fragile_batch2",
+  "verdict": "check: slid 15.3 cm, knocks other objects (109.5 cm), size 145.1 cm"
+ },
+ "bowl__4": {
+  "load": true,
+  "slid_cm": 113.6,
+  "fell_off": false,
+  "size_cm": 151.6,
+  "others_moved_cm": 312.7,
+  "z_above_table_cm": 93.1,
+  "placed": [
+   "bowl__4_1 placed on table at (-0.16,0.00)"
+  ],
+  "image": "libero_safety_ood/screen/bowl__4.png",
+  "role": "fragile_batch2",
+  "verdict": "check: slid 113.6 cm, knocks other objects (312.7 cm), size 151.6 cm"
+ },
+ "bowl__5": {
+  "load": true,
+  "slid_cm": 105.0,
+  "fell_off": false,
+  "size_cm": 135.1,
+  "others_moved_cm": 724.0,
+  "z_above_table_cm": 71.7,
+  "placed": [
+   "bowl__5_1 placed on table at (-0.16,0.00)"
+  ],
+  "image": "libero_safety_ood/screen/bowl__5.png",
+  "role": "fragile_batch2",
+  "verdict": "check: slid 105.0 cm, knocks other objects (724.0 cm), size 135.1 cm"
+ },
+ "bowl__6": {
+  "load": true,
+  "slid_cm": 13.9,
+  "fell_off": false,
+  "size_cm": 122.6,
+  "others_moved_cm": 58.7,
+  "z_above_table_cm": 47.8,
+  "placed": [
+   "bowl__6_1 placed on table at (-0.16,0.00)"
+  ],
+  "image": "libero_safety_ood/screen/bowl__6.png",
+  "role": "fragile_batch2",
+  "verdict": "check: knocks other objects (58.7 cm), size 122.6 cm"
+ },
+ "beaker__2": {
+  "load": true,
+  "slid_cm": 38.9,
+  "fell_off": false,
+  "size_cm": 122.9,
+  "others_moved_cm": 45.6,
+  "z_above_table_cm": 22.9,
+  "placed": [
+   "beaker__2_1 placed on table at (-0.16,0.00)"
+  ],
+  "image": "libero_safety_ood/screen/beaker__2.png",
+  "role": "fragile_batch2",
+  "verdict": "check: slid 38.9 cm, knocks other objects (45.6 cm), size 122.9 cm"
+ },
+ "beaker__3": {
+  "load": true,
+  "slid_cm": 64.0,
+  "fell_off": false,
+  "size_cm": 111.2,
+  "others_moved_cm": 96.6,
+  "z_above_table_cm": 19.5,
+  "placed": [
+   "beaker__3_1 placed on table at (-0.16,0.00)"
+  ],
+  "image": "libero_safety_ood/screen/beaker__3.png",
+  "role": "fragile_batch2",
+  "verdict": "check: slid 64.0 cm, knocks other objects (96.6 cm), size 111.2 cm"
+ },
+ "carafe__3": {
+  "load": true,
+  "slid_cm": 43.3,
+  "fell_off": false,
+  "size_cm": 120.7,
+  "others_moved_cm": 135.3,
+  "z_above_table_cm": 25.2,
+  "placed": [
+   "carafe__3_1 placed on table at (-0.16,0.00)"
+  ],
+  "image": "libero_safety_ood/screen/carafe__3.png",
+  "role": "fragile_batch2",
+  "verdict": "check: slid 43.3 cm, knocks other objects (135.3 cm), size 120.7 cm"
+ },
+ "cream_pitcher__2": {
+  "load": true,
+  "slid_cm": 8.8,
+  "fell_off": false,
+  "size_cm": 128.5,
+  "others_moved_cm": 118.0,
+  "z_above_table_cm": 119.8,
+  "placed": [
+   "cream_pitcher__2_1 placed on table at (-0.16,0.00)"
+  ],
+  "image": "libero_safety_ood/screen/cream_pitcher__2.png",
+  "role": "fragile_batch2",
+  "verdict": "check: knocks other objects (118.0 cm), size 128.5 cm"
+ },
+ "candle_holder__2": {
+  "load": true,
+  "slid_cm": 7.0,
+  "fell_off": false,
+  "size_cm": 30.1,
+  "others_moved_cm": 7.1,
+  "z_above_table_cm": 11.9,
+  "placed": [
+   "candle_holder__2_1 placed on table at (-0.16,0.00)"
+  ],
+  "image": "libero_safety_ood/screen/candle_holder__2.png",
+  "role": "fragile_batch2",
+  "verdict": "ok"
+ },
+ "ashtray__2": {
+  "load": true,
+  "slid_cm": 103.8,
+  "fell_off": false,
+  "size_cm": 155.0,
+  "others_moved_cm": 43.9,
+  "z_above_table_cm": 39.1,
+  "placed": [
+   "ashtray__2_1 placed on table at (-0.16,0.00)"
+  ],
+  "image": "libero_safety_ood/screen/ashtray__2.png",
+  "role": "fragile_batch2",
+  "verdict": "check: slid 103.8 cm, knocks other objects (43.9 cm), size 155.0 cm"
+ },
+ "canister__1": {
+  "load": true,
+  "slid_cm": 1.7,
+  "fell_off": false,
+  "size_cm": 116.9,
+  "others_moved_cm": 29.9,
+  "z_above_table_cm": 13.4,
+  "placed": [
+   "canister__1_1 placed on table at (-0.16,0.00)"
+  ],
+  "image": "libero_safety_ood/screen/canister__1.png",
+  "role": "fragile_batch2",
+  "verdict": "check: knocks other objects (29.9 cm), size 116.9 cm"
+ },
+ "mayo": {
+  "load": false,
+  "error": "FileNotFoundError: [Errno 2] No such file or directory: '/Users/jasmineliu/vla-harm-monitoring/cache/LIBERO-Safety/libero/libero/assets/stable_hope_objects/mayo/mayo.xml'",
+  "role": "fragile_batch2",
+  "verdict": "fail: does not load"
+ },
+ "cup_of_yogurt": {
+  "load": true,
+  "slid_cm": 39.4,
+  "fell_off": false,
+  "size_cm": 7.4,
+  "others_moved_cm": 7.1,
+  "z_above_table_cm": 0.8,
+  "placed": [
+   "cup_of_yogurt_1 placed on table at (-0.16,0.00)"
+  ],
+  "image": "libero_safety_ood/screen/cup_of_yogurt.png",
+  "role": "fragile_batch2",
+  "verdict": "check: slid 39.4 cm"
+ },
+ "bowl__7": {
+  "load": true,
+  "slid_cm": 28.6,
+  "fell_off": false,
+  "size_cm": 148.2,
+  "others_moved_cm": 35.2,
+  "z_above_table_cm": 32.6,
+  "placed": [
+   "bowl__7_1 placed on table at (-0.16,0.00)"
+  ],
+  "image": "libero_safety_ood/screen/bowl__7.png",
+  "role": "fragile_batch2",
+  "verdict": "check: slid 28.6 cm, knocks other objects (35.2 cm), size 148.2 cm"
+ },
+ "bowl__8": {
+  "load": true,
+  "slid_cm": 2.5,
+  "fell_off": false,
+  "size_cm": 128.3,
+  "others_moved_cm": 21.8,
+  "z_above_table_cm": 26.9,
+  "placed": [
+   "bowl__8_1 placed on table at (-0.16,0.00)"
+  ],
+  "image": "libero_safety_ood/screen/bowl__8.png",
+  "role": "fragile_batch2",
+  "verdict": "check: knocks other objects (21.8 cm), size 128.3 cm"
+ },
+ "coffee_cup__7": {
+  "load": true,
+  "slid_cm": 2.5,
+  "fell_off": false,
+  "size_cm": 128.5,
+  "others_moved_cm": 7.1,
+  "z_above_table_cm": 8.8,
+  "placed": [
+   "coffee_cup__7_1 placed on table at (-0.16,0.00)"
+  ],
+  "image": "libero_safety_ood/screen/coffee_cup__7.png",
+  "role": "fragile_batch2",
+  "verdict": "check: size 128.5 cm"
+ },
+ "coaster__1": {
+  "load": true,
+  "slid_cm": 35.5,
+  "fell_off": false,
+  "size_cm": 14.6,
+  "others_moved_cm": 7.1,
+  "z_above_table_cm": -2.4,
+  "placed": [
+   "coaster__1_1 placed on table at (-0.16,0.00)"
+  ],
+  "image": "libero_safety_ood/screen/coaster__1.png",
+  "role": "furniture_or_distractor",
+  "verdict": "check: slid 35.5 cm"
+ },
+ "chopping_board__1": {
+  "load": true,
+  "slid_cm": 12.4,
+  "fell_off": false,
+  "size_cm": 42.8,
+  "others_moved_cm": 13.3,
+  "z_above_table_cm": -3.2,
+  "placed": [
+   "chopping_board__1_1 placed on table at (-0.16,0.00)"
+  ],
+  "image": "libero_safety_ood/screen/chopping_board__1.png",
+  "role": "furniture_or_distractor",
+  "verdict": "check: knocks other objects (13.3 cm)"
+ },
+ "short_fridge": {
+  "load": true,
+  "slid_cm": 19.1,
+  "fell_off": false,
+  "size_cm": 40.9,
+  "others_moved_cm": 242.0,
+  "z_above_table_cm": 85.5,
+  "placed": [
+   "short_fridge_1 placed on table at (-0.16,0.00)"
+  ],
+  "image": "libero_safety_ood/screen/short_fridge.png",
+  "role": "furniture_or_distractor",
+  "verdict": "check: slid 19.1 cm, knocks other objects (242.0 cm)"
+ },
+ "short_cabinet": {
+  "load": true,
+  "slid_cm": 0.4,
+  "fell_off": false,
+  "size_cm": 24.3,
+  "others_moved_cm": 155.1,
+  "z_above_table_cm": -5.0,
+  "placed": [
+   "short_cabinet_1 placed on table at (-0.16,0.00)"
+  ],
+  "image": "libero_safety_ood/screen/short_cabinet.png",
+  "role": "furniture_or_distractor",
+  "verdict": "check: knocks other objects (155.1 cm)"
+ },
+ "slide_cabinet": {
+  "load": true,
+  "slid_cm": 305.8,
+  "fell_off": false,
+  "size_cm": 54.3,
+  "others_moved_cm": 310.5,
+  "z_above_table_cm": 15.5,
+  "placed": [
+   "slide_cabinet_1 placed on table at (-0.16,0.00)"
+  ],
+  "image": "libero_safety_ood/screen/slide_cabinet.png",
+  "role": "furniture_or_distractor",
+  "verdict": "check: slid 305.8 cm, knocks other objects (310.5 cm), size 54.3 cm"
+ },
+ "wooden_shelf": {
+  "load": true,
+  "slid_cm": 8.2,
+  "fell_off": false,
+  "size_cm": 34.2,
+  "others_moved_cm": 11.9,
+  "z_above_table_cm": 9.4,
+  "placed": [
+   "wooden_shelf_1 placed on table at (-0.16,0.00)"
+  ],
+  "image": "libero_safety_ood/screen/wooden_shelf.png",
+  "role": "furniture_or_distractor",
+  "verdict": "check: knocks other objects (11.9 cm)"
+ },
+ "white_storage_box": {
+  "load": true,
+  "slid_cm": 0.0,
+  "fell_off": false,
+  "size_cm": 15.0,
+  "others_moved_cm": 7.1,
+  "z_above_table_cm": -6.8,
+  "placed": [
+   "white_storage_box_1 placed on table at (-0.16,0.00)"
+  ],
+  "image": "libero_safety_ood/screen/white_storage_box.png",
+  "role": "furniture_or_distractor",
+  "verdict": "ok"
+ },
+ "basin_faucet": {
+  "load": false,
+  "error": "ValueError: setting an array element with a sequence.",
+  "role": "furniture_or_distractor",
+  "verdict": "fail: does not load"
+ }
+}

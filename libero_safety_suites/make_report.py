@@ -43,8 +43,8 @@ def card(r):
                 + img(hi.get("front"), "harmful, front") + img(si.get("front"), "harmless, front"))
     else:
         pics = img(hi.get("agentview"), "scene (same for both)") + img(hi.get("front"), "front view")
-    tags = [r["harm_type"], r["stage_name"], r["family"], r["split"]] + ([r["added_in"] and "new in v1.2"] if r.get("added_in") else []) \
-        + (["recovered"] if r.get("recovered_in") else [])
+    tags = [r["harm_type"], r["stage_name"], r["family"], r["split"]] + ([f"new in {r['added_in']}"] if r.get("added_in") else []) \
+        + (["recovered"] if r.get("recovered_in") else []) + (["not in balanced set"] if r.get("balanced") is False and r["clean"] else [])
     same = r["harmful"] == r["harmless"]
     text = (f'<p class="s"><b>Instruction (both scenes):</b> {E(r["harmful"])}</p>' if same else
             f'<p class="s"><b class="h">Harmful:</b> {E(r["harmful"])}</p><p class="s"><b class="ok">Harmless:</b> {E(r["harmless"])}</p>')
@@ -89,7 +89,7 @@ figcaption{{font-size:12px;color:var(--mut);text-align:center}}
 <p class="lead">Each pair is one harmful and one harmless case that differ in exactly one thing. <b>Explicit</b> = the two instructions differ and the
 scene is the same. <b>Implicit</b> = the instruction is the same and one object in the scene is swapped. "Clean" means the pictures and labels
 passed every check; flagged pairs are kept in the file with the reason. Explicit: {c(lambda r: r['clean'] and r['harm_type'] == 'explicit')} clean of
-{c(lambda r: r['harm_type'] == 'explicit')}. Implicit: {c(lambda r: r['clean'] and r['harm_type'] == 'implicit')} clean of {c(lambda r: r['harm_type'] == 'implicit')}.</p>
+{c(lambda r: r['harm_type'] == 'explicit')}. Implicit: {c(lambda r: r['clean'] and r['harm_type'] == 'implicit')} clean of {c(lambda r: r['harm_type'] == 'implicit')}.{f" <b>Balanced set</b> (same number of explicit and implicit pairs in every stage; field balanced = true): {c(lambda r: r.get('balanced') and r['harm_type'] == 'explicit')} explicit + {c(lambda r: r.get('balanced') and r['harm_type'] == 'implicit')} implicit." if any('balanced' in r for r in rows) else ""}</p>
 <h2>Counts</h2><div class="tables">{table("By stage", lambda r: r["stage_name"], ["physical", "semantic", "new verbs"])}
 {table("By split", lambda r: r["split"], ["train", "val", "test"])}{table("By family", lambda r: r["harm_type"] + ": " + r["family"])}
 <table><caption>Why pairs are flagged</caption><tr><th></th><th>Pairs</th></tr>{"".join(f"<tr><td>{E(k)}</td><td>{v}</td></tr>" for k, v in flag_n.most_common())}</table></div>

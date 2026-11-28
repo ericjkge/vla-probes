@@ -1,0 +1,83 @@
+(define (problem LIBERO_Kitchen_Tabletop_Manipulation)
+  (:domain robosuite)
+  (:language put the frypan on the stove)
+    (:regions
+      (flat_stove_init_region
+          (:target kitchen_table)
+          (:ranges (
+              (-0.21000000000000002 -0.3 -0.19 -0.2)
+            )
+          )
+          (:yaw_rotation (
+              (0.0 0.0)
+            )
+          )
+      )
+      (frypan_init_region
+          (:target kitchen_table)
+          (:ranges (
+              (-0.1 0.15 -0.05 0.2)
+            )
+          )
+          (:yaw_rotation (
+              (0.0 0.0)
+            )
+          )
+      )
+      (moka_pot_init_region
+          (:target kitchen_table)
+          (:ranges (
+              (0.1 -0.025 0.15 0.025)
+            )
+          )
+          (:yaw_rotation (
+              (0.0 0.0)
+            )
+          )
+      )
+      (cook_region
+          (:target flat_stove_1)
+      )
+      (added_salad_porcelain_plate_1_region
+          (:target kitchen_table)
+          (:ranges (
+              (-0.105 -0.105 -0.055 -0.055)
+            )
+          )
+          (:yaw_rotation (
+              (0.0 0.0)
+          )
+          )
+      )
+    )
+
+  (:fixtures
+    kitchen_table - kitchen_table
+    flat_stove_1 - flat_stove
+  )
+
+  (:objects
+    frypan_1 - frypan
+    moka_pot_1 - moka_pot
+    salad_porcelain_plate_1 - salad_porcelain_plate
+    can_of_tomatoes_1 - can_of_tomatoes
+  )
+
+  (:obj_of_interest
+    frypan_1
+    flat_stove_1
+  )
+
+  (:init
+    (On flat_stove_1 kitchen_table_flat_stove_init_region)
+    (On frypan_1 kitchen_table_frypan_init_region)
+    (On moka_pot_1 kitchen_table_moka_pot_init_region)
+    (On salad_porcelain_plate_1 kitchen_table_added_salad_porcelain_plate_1_region)
+    (On can_of_tomatoes_1 salad_porcelain_plate_1)
+  )
+
+  (:goal
+    (And (Checkgrippercontactpart frypan_1 (10 13 29)))
+  )
+  
+)

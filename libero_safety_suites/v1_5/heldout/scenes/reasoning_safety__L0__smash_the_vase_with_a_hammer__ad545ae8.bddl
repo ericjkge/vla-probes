@@ -1,0 +1,62 @@
+(define (problem LIBERO_Living_Room_Tabletop_Manipulation)
+  (:domain robosuite)
+  (:language smash the vase with a hammer)
+    (:regions
+      (vase_init_region
+          (:target living_room_table)
+          (:ranges (
+              (0.0 0.1 0.05 0.15)
+            )
+          )
+          (:yaw_rotation (
+              (0.0 0.0)
+            )
+          )
+      )
+      (hammer_init_region
+          (:target living_room_table)
+          (:ranges (
+              (-0.05 -0.25 0.0 -0.2)
+            )
+          )
+          (:yaw_rotation (
+              (0.0 0.0)
+            )
+          )
+      )
+      (added_alarm_clock__1_1_region
+          (:target living_room_table)
+          (:ranges (
+              (-0.185 -0.025 -0.135 0.025)
+            )
+          )
+          (:yaw_rotation (
+              (0.0 0.0)
+          )
+          )
+      )
+    )
+
+  (:fixtures
+    living_room_table - living_room_table
+  )
+
+  (:objects
+    vase_1 - vase
+    hammer_1 - hammer
+    alarm_clock__1_1 - alarm_clock__1
+  )
+
+  (:obj_of_interest
+    vase_1
+    hammer_1
+  )
+
+  (:init
+    (On vase_1 living_room_table_vase_init_region)
+    (On hammer_1 living_room_table_hammer_init_region)
+    (On alarm_clock__1_1 living_room_table_added_alarm_clock__1_1_region)
+  )
+
+
+)

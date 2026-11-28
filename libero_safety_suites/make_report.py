@@ -11,17 +11,28 @@ HERE = Path(__file__).parent
 ver = sys.argv[1] if len(sys.argv) > 1 else "v1_2"
 D = HERE / ver
 rows = [json.loads(l) for l in open(D / "pairs.jsonl")]
+SLIM = not any("clean" in r for r in rows)   # v1.4+: the file holds only usable pairs, so no clean / flagged marks
+for r in rows:   # v1.4+ files keep only usable pairs: no clean / stage_name fields
+    r.setdefault("clean", True); r.setdefault("scene_ok", True); r.setdefault("stage_name", r["stage"])
+    r.setdefault("scene_change", f"{r['hazard_object']} (harmful) vs {r['safe_object']} (harmless); nothing else changes")
 E = html.escape
 
 
 def status(r):
-    if r["clean"]: return "clean", ""
+    if r.get("clean", True): return "clean", ""
     why = [r.get("label_flag"), r.get("text_flag")] + list(r.get("scene_problem") or [])
     return "flagged", "; ".join(w for w in why if w)
 
 
 def table(title, keyf, order=None):
     keys = order or sorted({keyf(r) for r in rows}, key=str)
+    if SLIM:
+        out = [f"<table><caption>{E(title)}</caption><tr><th></th><th>Explicit</th><th>Implicit</th><th>Total</th></tr>"]
+        for k in keys:
+            rs = [r for r in rows if keyf(r) == k]
+            out.append(f"<tr><td>{E(str(k))}</td><td>{sum(r['harm_type'] == 'explicit' for r in rs)}</td>"
+                       f"<td>{sum(r['harm_type'] == 'implicit' for r in rs)}</td><td>{len(rs)}</td></tr>")
+        return "".join(out) + "</table>"
     out = [f"<table><caption>{E(title)}</caption><tr><th></th><th>Explicit clean</th><th>Implicit clean</th><th>Clean</th><th>Flagged</th></tr>"]
     for k in keys:
         rs = [r for r in rows if keyf(r) == k]
@@ -38,11 +49,12 @@ def img(path, label):
 def card(r):
     st, why = status(r)
     hi, si = r.get("harmful_images") or {}, r.get("harmless_images") or {}
+    # exactly the images the VLA gets: table view (agentview) + wrist camera; the front view is not a model input
     if r["harm_type"] == "implicit":
-        pics = (img(hi.get("agentview"), "harmful scene") + img(si.get("agentview"), "harmless scene")
-                + img(hi.get("front"), "harmful, front") + img(si.get("front"), "harmless, front"))
+        pics = (img(hi.get("agentview"), "harmful: table view") + img(hi.get("wrist"), "harmful: wrist")
+                + img(si.get("agentview"), "harmless: table view") + img(si.get("wrist"), "harmless: wrist"))
     else:
-        pics = img(hi.get("agentview"), "scene (same for both)") + img(hi.get("front"), "front view")
+        pics = img(hi.get("agentview"), "table view (both sides)") + img(hi.get("wrist"), "wrist (both sides)")
     tags = [r["harm_type"], r["stage_name"], r["family"], r["split"]] + ([f"new in {r['added_in']}"] if r.get("added_in") else []) \
         + (["recovered"] if r.get("recovered_in") else []) + (["not in balanced set"] if r.get("balanced") is False and r["clean"] else [])
     same = r["harmful"] == r["harmless"]
@@ -52,11 +64,12 @@ def card(r):
     return (f'<article class="card {st}" data-type="{r["harm_type"]}" data-family="{E(r["family"])}" data-split="{r["split"]}" data-stage="{E(r["stage_name"])}" '
             f'data-status="{st}" data-text="{E((r["pair_id"] + " " + r["harmful"] + " " + r["harmless"] + " " + (r.get("hazard_object") or "") + " " + (r.get("safe_object") or "")).lower())}">'
             f'<header><span class="id">{r["pair_id"]}</span>' + "".join(f'<span class="tag">{E(t)}</span>' for t in tags)
-            + f'<span class="st {st}">{st}</span></header>{text}<p class="m"><b>Why harmful:</b> {E(r["harm_reason"])}</p>{extra}'
+            + ("" if SLIM else f'<span class="st {st}">{st}</span>') + f'</header>{text}<p class="m"><b>Why harmful:</b> {E(r["harm_reason"])}</p>{extra}'
             + (f'<p class="m why"><b>Flag:</b> {E(why)}</p>' if why else "") + f'<div class="pics">{pics}</div></article>')
 
 
 c = lambda f: sum(1 for r in rows if f(r))
+SLIM_LEAD = " Pictures are what the model gets with the instruction: table view + wrist camera. Every pair in the file is used; split <b>heldout</b> = objects or verbs that appear nowhere else." if SLIM else ""
 fams = sorted({r["family"] for r in rows})
 opt = lambda name, vals: f'<label>{name} <select id="f-{name.lower()}"><option value="">all</option>' + "".join(f'<option>{E(v)}</option>' for v in vals) + "</select></label>"
 flag_n = Counter()
@@ -85,20 +98,20 @@ p.s{{margin:3px 0;font-size:16px}} p.m{{margin:3px 0;color:var(--mut);font-size:
 .pics{{display:flex;flex-wrap:wrap;gap:8px;margin-top:8px}} figure{{margin:0}} img{{width:200px;height:200px;border-radius:6px;display:block;background:var(--tag)}}
 figcaption{{font-size:12px;color:var(--mut);text-align:center}}
 </style></head><body><main>
-<h1>Dataset {ver.replace('_', '.')}: {len(rows)} pairs, {c(lambda r: r['clean'])} clean</h1>
+<h1>Dataset {ver.replace('_', '.')}: {len(rows)} pairs{"" if SLIM else f", {c(lambda r: r['clean'])} clean"}</h1>
 <p class="lead">Each pair is one harmful and one harmless case that differ in exactly one thing. <b>Explicit</b> = the two instructions differ and the
-scene is the same. <b>Implicit</b> = the instruction is the same and one object in the scene is swapped. "Clean" means the pictures and labels
+scene is the same. <b>Implicit</b> = the instruction is the same and one object in the scene is swapped.{SLIM_LEAD if SLIM else ""}<span{' hidden' if SLIM else ''}> "Clean" means the pictures and labels
 passed every check; flagged pairs are kept in the file with the reason. Explicit: {c(lambda r: r['clean'] and r['harm_type'] == 'explicit')} clean of
-{c(lambda r: r['harm_type'] == 'explicit')}. Implicit: {c(lambda r: r['clean'] and r['harm_type'] == 'implicit')} clean of {c(lambda r: r['harm_type'] == 'implicit')}.{f" <b>Balanced set</b> (same number of explicit and implicit pairs in every stage; field balanced = true): {c(lambda r: r.get('balanced') and r['harm_type'] == 'explicit')} explicit + {c(lambda r: r.get('balanced') and r['harm_type'] == 'implicit')} implicit." if any('balanced' in r for r in rows) else ""}</p>
-<h2>Counts</h2><div class="tables">{table("By stage", lambda r: r["stage_name"], ["physical", "semantic", "new verbs"])}
-{table("By split", lambda r: r["split"], ["train", "val", "test"])}{table("By family", lambda r: r["harm_type"] + ": " + r["family"])}
-<table><caption>Why pairs are flagged</caption><tr><th></th><th>Pairs</th></tr>{"".join(f"<tr><td>{E(k)}</td><td>{v}</td></tr>" for k, v in flag_n.most_common())}</table></div>
+{c(lambda r: r['harm_type'] == 'explicit')}. Implicit: {c(lambda r: r['clean'] and r['harm_type'] == 'implicit')} clean of {c(lambda r: r['harm_type'] == 'implicit')}.{f" <b>Balanced set</b> (same number of explicit and implicit pairs in every stage; field balanced = true): {c(lambda r: r.get('balanced') and r['harm_type'] == 'explicit')} explicit + {c(lambda r: r.get('balanced') and r['harm_type'] == 'implicit')} implicit." if any('balanced' in r for r in rows) else ""}</span></p>
+<h2>Counts</h2><div class="tables">{table("By stage", lambda r: r["stage_name"], ["physical", "semantic", "new verbs"] + (["held-out"] if any(r["split"] == "heldout" for r in rows) else []))}
+{table("By split", lambda r: r["split"], ["train", "val", "test"] + (["heldout"] if any(r["split"] == "heldout" for r in rows) else []))}{table("By family", lambda r: r["harm_type"] + ": " + r["family"])}
+<table{' hidden' if SLIM else ''}><caption>Why pairs are flagged</caption><tr><th></th><th>Pairs</th></tr>{"".join(f"<tr><td>{E(k)}</td><td>{v}</td></tr>" for k, v in flag_n.most_common())}</table></div>
 <h2>All pairs</h2>
-<div class="bar">{opt("Type", ["explicit", "implicit"])}{opt("Status", ["clean", "flagged"])}{opt("Stage", ["physical", "semantic", "new verbs"])}{opt("Family", fams)}{opt("Split", ["train", "val", "test"])}
+<div class="bar">{opt("Type", ["explicit", "implicit"])}{"" if SLIM else opt("Status", ["clean", "flagged"])}{opt("Stage", ["physical", "semantic", "new verbs"] + (["held-out"] if any(r["split"] == "heldout" for r in rows) else []))}{opt("Family", fams)}{opt("Split", ["train", "val", "test"] + (["heldout"] if any(r["split"] == "heldout" for r in rows) else []))}
 <label>Search <input id="q" placeholder="word, object or pair id"></label><span id="n"></span></div>
 <div id="cards">{"".join(card(r) for r in rows)}</div></main>
 <script>
-const cards=[...document.querySelectorAll('.card')],ids=['type','status','stage','family','split'];
+const cards=[...document.querySelectorAll('.card')],ids=['type','status','stage','family','split'].filter(i=>document.getElementById('f-'+i));
 function go(){{const f=Object.fromEntries(ids.map(i=>[i,document.getElementById('f-'+i).value])),q=document.getElementById('q').value.toLowerCase().trim();let n=0;
 for(const c of cards){{const ok=ids.every(i=>!f[i]||c.dataset[i]===f[i])&&(!q||c.dataset.text.includes(q));c.style.display=ok?'':'none';n+=ok}}
 document.getElementById('n').textContent=n+' pairs shown'}}

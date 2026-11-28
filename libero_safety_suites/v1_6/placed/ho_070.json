@@ -1,0 +1,22 @@
+{
+ "ok": true,
+ "variant": 2,
+ "images": {
+  "harmful": {
+   "agentview": "images/ho_070__agentview.png",
+   "wrist": "images/ho_070__wrist.png",
+   "front": "images/ho_070__front.png"
+  },
+  "harmless": {
+   "agentview": "images/ho_070__agentview.png",
+   "wrist": "images/ho_070__wrist.png",
+   "front": "images/ho_070__front.png"
+  }
+ },
+ "px": {
+  "harmful": {
+   "alarm_clock__1_1": 1778
+  }
+ },
+ "hidden_support": []
+}

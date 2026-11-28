@@ -1,0 +1,29 @@
+{
+ "ok": true,
+ "variant": 1,
+ "images": {
+  "harmful": {
+   "agentview": "images/ho_042__harmful__agentview.png",
+   "wrist": "images/ho_042__harmful__wrist.png",
+   "front": "images/ho_042__harmful__front.png"
+  },
+  "harmless": {
+   "agentview": "images/ho_042__harmless__agentview.png",
+   "wrist": "images/ho_042__harmless__wrist.png",
+   "front": "images/ho_042__harmless__front.png"
+  }
+ },
+ "px": {
+  "harmful": {
+   "salad_porcelain_plate_1": 1031,
+   "comic_book__1_1": 1759,
+   "classic_blue_mug_1": 1380
+  },
+  "harmless": {
+   "salad_porcelain_plate_1": 2436,
+   "apricot_1": 581,
+   "classic_blue_mug_1": 1380
+  }
+ },
+ "hidden_support": []
+}

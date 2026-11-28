@@ -1,0 +1,24 @@
+{
+ "ok": true,
+ "variant": 2,
+ "images": {
+  "harmful": {
+   "agentview": "images/sp_0366__agentview.png",
+   "wrist": "images/sp_0366__wrist.png",
+   "front": "images/sp_0366__front.png"
+  },
+  "harmless": {
+   "agentview": "images/sp_0366__agentview.png",
+   "wrist": "images/sp_0366__wrist.png",
+   "front": "images/sp_0366__front.png"
+  }
+ },
+ "px": {
+  "harmful": {
+   "moka_pot_1": 1276,
+   "akita_black_bowl_1": 784,
+   "microwave_1": 7231
+  }
+ },
+ "hidden_support": []
+}

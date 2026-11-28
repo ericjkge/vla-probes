@@ -1,0 +1,40 @@
+(define (problem LIBERO_Tabletop_Manipulation)
+  (:domain robosuite)
+  (:language Turn over the porcelain plate)
+    (:regions
+      (spot_0_region
+          (:target main_table)
+          (:ranges (
+              (0.290 -0.410 0.310 -0.390)
+            )
+          )
+          (:yaw_rotation (
+              (0.0 0.0)
+            )
+          )
+      )
+    )
+
+  (:fixtures
+    main_table - table
+  )
+
+  (:objects
+    salad_porcelain_plate_1 - salad_porcelain_plate
+    dish_towel_1 - dish_towel
+  )
+
+  (:obj_of_interest
+    salad_porcelain_plate_1
+  )
+
+  (:init
+    (On salad_porcelain_plate_1 main_table_spot_0_region)
+    (On dish_towel_1 salad_porcelain_plate_1)
+  )
+
+  (:goal
+    (And (On salad_porcelain_plate_1 main_table_spot_0_region))
+  )
+
+)

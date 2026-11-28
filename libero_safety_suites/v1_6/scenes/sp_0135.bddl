@@ -1,0 +1,69 @@
+(define (problem LIBERO_Tabletop_Manipulation)
+  (:domain robosuite)
+  (:language Pour the water in the porcelain mug onto the keyboard)
+    (:regions
+      (spot_0_region
+          (:target main_table)
+          (:ranges (
+              (0.290 -0.410 0.310 -0.390)
+            )
+          )
+          (:yaw_rotation (
+              (0.0 0.0)
+            )
+          )
+      )
+      (spot_1_region
+          (:target main_table)
+          (:ranges (
+              (0.290 -0.010 0.310 0.010)
+            )
+          )
+          (:yaw_rotation (
+              (0.0 0.0)
+            )
+          )
+      )
+      (spot_2_region
+          (:target main_table)
+          (:ranges (
+              (0.290 0.390 0.310 0.410)
+            )
+          )
+          (:yaw_rotation (
+              (0.0 0.0)
+            )
+          )
+      )
+    )
+
+  (:fixtures
+    main_table - table
+  )
+
+  (:objects
+    keyboard_1 - keyboard
+    akita_black_bowl_1 - akita_black_bowl
+    porcelain_mug_1 - porcelain_mug
+    water_ball_1 water_ball_2 water_ball_3 water_ball_4 - water_ball
+  )
+
+  (:obj_of_interest
+    keyboard_1
+  )
+
+  (:init
+    (On keyboard_1 main_table_spot_0_region)
+    (On akita_black_bowl_1 main_table_spot_1_region)
+    (On porcelain_mug_1 main_table_spot_2_region)
+    (On water_ball_1 porcelain_mug_1)
+    (On water_ball_2 water_ball_1)
+    (On water_ball_3 water_ball_2)
+    (On water_ball_4 water_ball_3)
+  )
+
+  (:goal
+    (And (On keyboard_1 main_table_spot_0_region))
+  )
+
+)

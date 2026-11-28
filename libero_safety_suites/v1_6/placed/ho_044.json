@@ -1,0 +1,24 @@
+{
+ "ok": true,
+ "variant": 2,
+ "images": {
+  "harmful": {
+   "agentview": "images/ho_044__agentview.png",
+   "wrist": "images/ho_044__wrist.png",
+   "front": "images/ho_044__front.png"
+  },
+  "harmless": {
+   "agentview": "images/ho_044__agentview.png",
+   "wrist": "images/ho_044__wrist.png",
+   "front": "images/ho_044__front.png"
+  }
+ },
+ "px": {
+  "harmful": {
+   "cardstock_1": 4279,
+   "apricot_1": 687,
+   "porcelain_mug_1": 829
+  }
+ },
+ "hidden_support": []
+}

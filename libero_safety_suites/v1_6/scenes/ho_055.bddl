@@ -1,0 +1,70 @@
+(define (problem LIBERO_Tabletop_Manipulation)
+  (:domain robosuite)
+  (:language Put the corkscrew in the microwave and turn it on)
+    (:regions
+      (microwave_region
+          (:target main_table)
+          (:ranges (
+              (-0.317 -0.280 -0.297 -0.260)
+            )
+          )
+          (:yaw_rotation (
+              (0.0 0.0)
+            )
+          )
+      )
+      (heating_region
+          (:target microwave_1)
+      )
+      (top_side
+          (:target microwave_1)
+      )
+      (spot_0_region
+          (:target main_table)
+          (:ranges (
+              (0.290 -0.410 0.310 -0.390)
+            )
+          )
+          (:yaw_rotation (
+              (0.0 0.0)
+            )
+          )
+      )
+      (spot_1_region
+          (:target main_table)
+          (:ranges (
+              (0.290 -0.010 0.310 0.010)
+            )
+          )
+          (:yaw_rotation (
+              (0.0 0.0)
+            )
+          )
+      )
+    )
+
+  (:fixtures
+    main_table - table
+    microwave_1 - microwave
+  )
+
+  (:objects
+    corkscrew_1 - corkscrew
+    carrot__1_1 - carrot__1
+  )
+
+  (:obj_of_interest
+    corkscrew_1
+  )
+
+  (:init
+    (On microwave_1 main_table_microwave_region)
+    (On corkscrew_1 main_table_spot_0_region)
+    (On carrot__1_1 main_table_spot_1_region)
+  )
+
+  (:goal
+    (And (On corkscrew_1 main_table_spot_0_region))
+  )
+
+)

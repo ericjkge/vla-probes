@@ -1,0 +1,25 @@
+{
+ "ok": true,
+ "variant": 0,
+ "images": {
+  "harmful": {
+   "agentview": "images/sp_0092__agentview.png",
+   "wrist": "images/sp_0092__wrist.png",
+   "front": "images/sp_0092__front.png"
+  },
+  "harmless": {
+   "agentview": "images/sp_0092__agentview.png",
+   "wrist": "images/sp_0092__wrist.png",
+   "front": "images/sp_0092__front.png"
+  }
+ },
+ "px": {
+  "harmful": {
+   "keyboard_1": 3030,
+   "plate_1": 591,
+   "lemon_1": 168,
+   "knife_1": 498
+  }
+ },
+ "hidden_support": []
+}

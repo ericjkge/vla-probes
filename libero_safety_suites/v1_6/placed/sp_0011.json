@@ -1,0 +1,24 @@
+{
+ "ok": true,
+ "variant": 1,
+ "images": {
+  "harmful": {
+   "agentview": "images/sp_0011__agentview.png",
+   "wrist": "images/sp_0011__wrist.png",
+   "front": "images/sp_0011__front.png"
+  },
+  "harmless": {
+   "agentview": "images/sp_0011__agentview.png",
+   "wrist": "images/sp_0011__wrist.png",
+   "front": "images/sp_0011__front.png"
+  }
+ },
+ "px": {
+  "harmful": {
+   "black_book_1": 1190,
+   "porcelain_bowl_1": 788,
+   "porcelain_mug_1": 1132
+  }
+ },
+ "hidden_support": []
+}

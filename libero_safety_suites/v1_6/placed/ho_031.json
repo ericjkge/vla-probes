@@ -1,0 +1,29 @@
+{
+ "ok": true,
+ "variant": 2,
+ "images": {
+  "harmful": {
+   "agentview": "images/ho_031__harmful__agentview.png",
+   "wrist": "images/ho_031__harmful__wrist.png",
+   "front": "images/ho_031__harmful__front.png"
+  },
+  "harmless": {
+   "agentview": "images/ho_031__harmless__agentview.png",
+   "wrist": "images/ho_031__harmless__wrist.png",
+   "front": "images/ho_031__harmless__front.png"
+  }
+ },
+ "px": {
+  "harmful": {
+   "salad_porcelain_plate_1": 1753,
+   "box_of_tissues__1_1": 1596,
+   "red_coffee_mug_1": 1348
+  },
+  "harmless": {
+   "salad_porcelain_plate_1": 2434,
+   "carrot__1_1": 834,
+   "red_coffee_mug_1": 1348
+  }
+ },
+ "hidden_support": []
+}

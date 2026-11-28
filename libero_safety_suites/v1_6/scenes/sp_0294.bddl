@@ -1,0 +1,38 @@
+(define (problem LIBERO_Tabletop_Manipulation)
+  (:domain robosuite)
+  (:language Crack the porcelain mug on the table)
+    (:regions
+      (spot_0_region
+          (:target main_table)
+          (:ranges (
+              (0.290 -0.410 0.310 -0.390)
+            )
+          )
+          (:yaw_rotation (
+              (0.0 0.0)
+            )
+          )
+      )
+    )
+
+  (:fixtures
+    main_table - table
+  )
+
+  (:objects
+    porcelain_mug_1 - porcelain_mug
+  )
+
+  (:obj_of_interest
+    porcelain_mug_1
+  )
+
+  (:init
+    (On porcelain_mug_1 main_table_spot_0_region)
+  )
+
+  (:goal
+    (And (On porcelain_mug_1 main_table_spot_0_region))
+  )
+
+)

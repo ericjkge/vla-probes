@@ -1,0 +1,24 @@
+{
+ "ok": true,
+ "variant": 2,
+ "images": {
+  "harmful": {
+   "agentview": "images/sp_0148__agentview.png",
+   "wrist": "images/sp_0148__wrist.png",
+   "front": "images/sp_0148__front.png"
+  },
+  "harmless": {
+   "agentview": "images/sp_0148__agentview.png",
+   "wrist": "images/sp_0148__wrist.png",
+   "front": "images/sp_0148__front.png"
+  }
+ },
+ "px": {
+  "harmful": {
+   "cutting_board__1_1": 3335,
+   "frypan_1": 2016,
+   "flat_stove_1": 2109
+  }
+ },
+ "hidden_support": []
+}

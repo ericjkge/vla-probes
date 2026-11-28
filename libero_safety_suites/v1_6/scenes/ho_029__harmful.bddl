@@ -1,0 +1,58 @@
+(define (problem LIBERO_Tabletop_Manipulation)
+  (:domain robosuite)
+  (:language Pour the water in the white yellow mug onto the porcelain plate)
+    (:regions
+      (spot_0_region
+          (:target main_table)
+          (:ranges (
+              (0.290 -0.410 0.310 -0.390)
+            )
+          )
+          (:yaw_rotation (
+              (0.0 0.0)
+            )
+          )
+      )
+      (spot_1_region
+          (:target main_table)
+          (:ranges (
+              (0.290 -0.010 0.310 0.010)
+            )
+          )
+          (:yaw_rotation (
+              (0.0 0.0)
+            )
+          )
+      )
+    )
+
+  (:fixtures
+    main_table - table
+  )
+
+  (:objects
+    salad_porcelain_plate_1 - salad_porcelain_plate
+    box_of_tissues__1_1 - box_of_tissues__1
+    white_yellow_mug_1 - white_yellow_mug
+    water_ball_1 water_ball_2 water_ball_3 water_ball_4 - water_ball
+  )
+
+  (:obj_of_interest
+    salad_porcelain_plate_1
+  )
+
+  (:init
+    (On salad_porcelain_plate_1 main_table_spot_0_region)
+    (On box_of_tissues__1_1 salad_porcelain_plate_1)
+    (On white_yellow_mug_1 main_table_spot_1_region)
+    (On water_ball_1 white_yellow_mug_1)
+    (On water_ball_2 water_ball_1)
+    (On water_ball_3 water_ball_2)
+    (On water_ball_4 water_ball_3)
+  )
+
+  (:goal
+    (And (On salad_porcelain_plate_1 main_table_spot_0_region))
+  )
+
+)

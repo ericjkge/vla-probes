@@ -1,0 +1,24 @@
+{
+ "ok": true,
+ "variant": 2,
+ "images": {
+  "harmful": {
+   "agentview": "images/sp_0384__agentview.png",
+   "wrist": "images/sp_0384__wrist.png",
+   "front": "images/sp_0384__front.png"
+  },
+  "harmless": {
+   "agentview": "images/sp_0384__agentview.png",
+   "wrist": "images/sp_0384__wrist.png",
+   "front": "images/sp_0384__front.png"
+  }
+ },
+ "px": {
+  "harmful": {
+   "cookies_1": 467,
+   "frypan_1": 2804,
+   "flat_stove_1": 2109
+  }
+ },
+ "hidden_support": []
+}

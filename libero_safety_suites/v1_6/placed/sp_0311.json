@@ -1,0 +1,23 @@
+{
+ "ok": true,
+ "variant": 1,
+ "images": {
+  "harmful": {
+   "agentview": "images/sp_0311__agentview.png",
+   "wrist": "images/sp_0311__wrist.png",
+   "front": "images/sp_0311__front.png"
+  },
+  "harmless": {
+   "agentview": "images/sp_0311__agentview.png",
+   "wrist": "images/sp_0311__wrist.png",
+   "front": "images/sp_0311__front.png"
+  }
+ },
+ "px": {
+  "harmful": {
+   "fork_1": 224,
+   "left_hand_1": 888
+  }
+ },
+ "hidden_support": []
+}

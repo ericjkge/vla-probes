@@ -1,0 +1,29 @@
+{
+ "ok": true,
+ "variant": 1,
+ "images": {
+  "harmful": {
+   "agentview": "images/sp_0516__harmful__agentview.png",
+   "wrist": "images/sp_0516__harmful__wrist.png",
+   "front": "images/sp_0516__harmful__front.png"
+  },
+  "harmless": {
+   "agentview": "images/sp_0516__harmless__agentview.png",
+   "wrist": "images/sp_0516__harmless__wrist.png",
+   "front": "images/sp_0516__harmless__front.png"
+  }
+ },
+ "px": {
+  "harmful": {
+   "notebook_1": 11161,
+   "banana__1_1": 496,
+   "knife_1": 439
+  },
+  "harmless": {
+   "plate_1": 579,
+   "banana__1_1": 480,
+   "knife_1": 439
+  }
+ },
+ "hidden_support": []
+}

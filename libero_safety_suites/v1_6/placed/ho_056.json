@@ -1,0 +1,24 @@
+{
+ "ok": true,
+ "variant": 0,
+ "images": {
+  "harmful": {
+   "agentview": "images/ho_056__agentview.png",
+   "wrist": "images/ho_056__wrist.png",
+   "front": "images/ho_056__front.png"
+  },
+  "harmless": {
+   "agentview": "images/ho_056__agentview.png",
+   "wrist": "images/ho_056__wrist.png",
+   "front": "images/ho_056__front.png"
+  }
+ },
+ "px": {
+  "harmful": {
+   "can_of_tomatoes_1": 970,
+   "cucumber_1": 395,
+   "microwave_1": 7231
+  }
+ },
+ "hidden_support": []
+}

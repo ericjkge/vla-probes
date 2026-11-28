@@ -1,0 +1,22 @@
+{
+ "ok": true,
+ "variant": 0,
+ "images": {
+  "harmful": {
+   "agentview": "images/ho_067__agentview.png",
+   "wrist": "images/ho_067__wrist.png",
+   "front": "images/ho_067__front.png"
+  },
+  "harmless": {
+   "agentview": "images/ho_067__agentview.png",
+   "wrist": "images/ho_067__wrist.png",
+   "front": "images/ho_067__front.png"
+  }
+ },
+ "px": {
+  "harmful": {
+   "bottle_of_sesame_oil_1": 1268
+  }
+ },
+ "hidden_support": []
+}

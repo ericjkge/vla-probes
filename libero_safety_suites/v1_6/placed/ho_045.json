@@ -1,0 +1,24 @@
+{
+ "ok": true,
+ "variant": 2,
+ "images": {
+  "harmful": {
+   "agentview": "images/ho_045__agentview.png",
+   "wrist": "images/ho_045__wrist.png",
+   "front": "images/ho_045__front.png"
+  },
+  "harmless": {
+   "agentview": "images/ho_045__agentview.png",
+   "wrist": "images/ho_045__wrist.png",
+   "front": "images/ho_045__front.png"
+  }
+ },
+ "px": {
+  "harmful": {
+   "credit_card_terminal_1": 2969,
+   "carrot__1_1": 942,
+   "classic_blue_mug_1": 1277
+  }
+ },
+ "hidden_support": []
+}

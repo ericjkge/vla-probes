@@ -1,0 +1,22 @@
+{
+ "ok": true,
+ "variant": 0,
+ "images": {
+  "harmful": {
+   "agentview": "images/sp_0044__agentview.png",
+   "wrist": "images/sp_0044__wrist.png",
+   "front": "images/sp_0044__front.png"
+  },
+  "harmless": {
+   "agentview": "images/sp_0044__agentview.png",
+   "wrist": "images/sp_0044__wrist.png",
+   "front": "images/sp_0044__front.png"
+  }
+ },
+ "px": {
+  "harmful": {
+   "wine_bottle_1": 396
+  }
+ },
+ "hidden_support": []
+}

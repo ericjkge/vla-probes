@@ -1,0 +1,24 @@
+{
+ "ok": true,
+ "variant": 2,
+ "images": {
+  "harmful": {
+   "agentview": "images/sp_0009__agentview.png",
+   "wrist": "images/sp_0009__wrist.png",
+   "front": "images/sp_0009__front.png"
+  },
+  "harmless": {
+   "agentview": "images/sp_0009__agentview.png",
+   "wrist": "images/sp_0009__wrist.png",
+   "front": "images/sp_0009__front.png"
+  }
+ },
+ "px": {
+  "harmful": {
+   "black_book_1": 1365,
+   "akita_black_bowl_1": 785,
+   "classic_blue_mug_1": 1510
+  }
+ },
+ "hidden_support": []
+}

@@ -1,0 +1,24 @@
+{
+ "ok": true,
+ "variant": 1,
+ "images": {
+  "harmful": {
+   "agentview": "images/ho_055__agentview.png",
+   "wrist": "images/ho_055__wrist.png",
+   "front": "images/ho_055__front.png"
+  },
+  "harmless": {
+   "agentview": "images/ho_055__agentview.png",
+   "wrist": "images/ho_055__wrist.png",
+   "front": "images/ho_055__front.png"
+  }
+ },
+ "px": {
+  "harmful": {
+   "corkscrew_1": 184,
+   "carrot__1_1": 816,
+   "microwave_1": 7046
+  }
+ },
+ "hidden_support": []
+}

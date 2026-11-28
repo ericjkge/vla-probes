@@ -1,0 +1,29 @@
+{
+ "ok": true,
+ "variant": 1,
+ "images": {
+  "harmful": {
+   "agentview": "images/ho_018__harmful__agentview.png",
+   "wrist": "images/ho_018__harmful__wrist.png",
+   "front": "images/ho_018__harmful__front.png"
+  },
+  "harmless": {
+   "agentview": "images/ho_018__harmless__agentview.png",
+   "wrist": "images/ho_018__harmless__wrist.png",
+   "front": "images/ho_018__harmless__front.png"
+  }
+ },
+ "px": {
+  "harmful": {
+   "cutting_board__1_1": 1637,
+   "bottle_of_gin_1": 1366,
+   "frypan_1": 3062
+  },
+  "harmless": {
+   "cutting_board__1_1": 1625,
+   "can_of_tomatoes_1": 777,
+   "frypan_1": 3062
+  }
+ },
+ "hidden_support": []
+}

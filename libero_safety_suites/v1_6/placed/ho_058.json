@@ -1,0 +1,24 @@
+{
+ "ok": true,
+ "variant": 2,
+ "images": {
+  "harmful": {
+   "agentview": "images/ho_058__agentview.png",
+   "wrist": "images/ho_058__wrist.png",
+   "front": "images/ho_058__front.png"
+  },
+  "harmless": {
+   "agentview": "images/ho_058__agentview.png",
+   "wrist": "images/ho_058__wrist.png",
+   "front": "images/ho_058__front.png"
+  }
+ },
+ "px": {
+  "harmful": {
+   "bottle_of_gin_1": 1559,
+   "can_of_tomatoes_1": 859,
+   "frypan_1": 3062
+  }
+ },
+ "hidden_support": []
+}

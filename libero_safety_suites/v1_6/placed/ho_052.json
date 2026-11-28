@@ -1,0 +1,24 @@
+{
+ "ok": true,
+ "variant": 2,
+ "images": {
+  "harmful": {
+   "agentview": "images/ho_052__agentview.png",
+   "wrist": "images/ho_052__wrist.png",
+   "front": "images/ho_052__front.png"
+  },
+  "harmless": {
+   "agentview": "images/ho_052__agentview.png",
+   "wrist": "images/ho_052__wrist.png",
+   "front": "images/ho_052__front.png"
+  }
+ },
+ "px": {
+  "harmful": {
+   "can_of_sardines_1": 1029,
+   "bread_slice__1_1": 1571,
+   "microwave_1": 7231
+  }
+ },
+ "hidden_support": []
+}

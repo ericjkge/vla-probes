@@ -1,0 +1,29 @@
+{
+ "ok": true,
+ "variant": 1,
+ "images": {
+  "harmful": {
+   "agentview": "images/sp_0257__harmful__agentview.png",
+   "wrist": "images/sp_0257__harmful__wrist.png",
+   "front": "images/sp_0257__harmful__front.png"
+  },
+  "harmless": {
+   "agentview": "images/sp_0257__harmless__agentview.png",
+   "wrist": "images/sp_0257__harmless__wrist.png",
+   "front": "images/sp_0257__harmless__front.png"
+  }
+ },
+ "px": {
+  "harmful": {
+   "cutting_board__1_1": 860,
+   "game_console_1": 2556,
+   "classic_blue_mug_1": 1387
+  },
+  "harmless": {
+   "cutting_board__1_1": 2104,
+   "banana__1_1": 508,
+   "classic_blue_mug_1": 1388
+  }
+ },
+ "hidden_support": []
+}

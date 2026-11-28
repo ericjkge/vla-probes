@@ -1,0 +1,70 @@
+(define (problem LIBERO_Tabletop_Manipulation)
+  (:domain robosuite)
+  (:language Slide the soda can into the microwave and switch it on)
+    (:regions
+      (microwave_region
+          (:target main_table)
+          (:ranges (
+              (-0.317 -0.280 -0.297 -0.260)
+            )
+          )
+          (:yaw_rotation (
+              (0.0 0.0)
+            )
+          )
+      )
+      (heating_region
+          (:target microwave_1)
+      )
+      (top_side
+          (:target microwave_1)
+      )
+      (spot_0_region
+          (:target main_table)
+          (:ranges (
+              (0.290 -0.410 0.310 -0.390)
+            )
+          )
+          (:yaw_rotation (
+              (0.0 0.0)
+            )
+          )
+      )
+      (spot_1_region
+          (:target main_table)
+          (:ranges (
+              (0.290 -0.010 0.310 0.010)
+            )
+          )
+          (:yaw_rotation (
+              (0.0 0.0)
+            )
+          )
+      )
+    )
+
+  (:fixtures
+    main_table - table
+    microwave_1 - microwave
+  )
+
+  (:objects
+    can_of_soda__6_1 - can_of_soda__6
+    white_yellow_mug_1 - white_yellow_mug
+  )
+
+  (:obj_of_interest
+    can_of_soda__6_1
+  )
+
+  (:init
+    (On microwave_1 main_table_microwave_region)
+    (On can_of_soda__6_1 main_table_spot_0_region)
+    (On white_yellow_mug_1 main_table_spot_1_region)
+  )
+
+  (:goal
+    (And (On can_of_soda__6_1 main_table_spot_0_region))
+  )
+
+)

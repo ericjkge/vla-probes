@@ -1,0 +1,24 @@
+{
+ "ok": true,
+ "variant": 1,
+ "images": {
+  "harmful": {
+   "agentview": "images/sp_0131__agentview.png",
+   "wrist": "images/sp_0131__wrist.png",
+   "front": "images/sp_0131__front.png"
+  },
+  "harmless": {
+   "agentview": "images/sp_0131__agentview.png",
+   "wrist": "images/sp_0131__wrist.png",
+   "front": "images/sp_0131__front.png"
+  }
+ },
+ "px": {
+  "harmful": {
+   "game_console_1": 3073,
+   "vase_1": 2093,
+   "classic_blue_mug_1": 1210
+  }
+ },
+ "hidden_support": []
+}

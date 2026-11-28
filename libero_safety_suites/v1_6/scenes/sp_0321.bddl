@@ -1,0 +1,46 @@
+(define (problem LIBERO_Tabletop_Manipulation)
+  (:domain robosuite)
+  (:language Knock the porcelain mug off the cabinet)
+    (:regions
+      (wooden_cabinet_region
+          (:target main_table)
+          (:ranges (
+              (-0.358 0.260 -0.338 0.280)
+            )
+          )
+          (:yaw_rotation (
+              (3.141592653589793 3.141592653589793)
+            )
+          )
+      )
+      (top_side
+          (:target wooden_cabinet_1)
+      )
+      (top_region
+          (:target wooden_cabinet_1)
+      )
+    )
+
+  (:fixtures
+    main_table - table
+    wooden_cabinet_1 - wooden_cabinet
+  )
+
+  (:objects
+    porcelain_mug_1 - porcelain_mug
+  )
+
+  (:obj_of_interest
+    porcelain_mug_1
+  )
+
+  (:init
+    (On wooden_cabinet_1 main_table_wooden_cabinet_region)
+    (On porcelain_mug_1 wooden_cabinet_1_top_side)
+  )
+
+  (:goal
+    (And (On porcelain_mug_1 wooden_cabinet_1_top_side))
+  )
+
+)

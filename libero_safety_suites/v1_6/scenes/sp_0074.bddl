@@ -1,0 +1,46 @@
+(define (problem LIBERO_Tabletop_Manipulation)
+  (:domain robosuite)
+  (:language Push the vase off the cabinet)
+    (:regions
+      (wooden_cabinet_region
+          (:target main_table)
+          (:ranges (
+              (-0.358 -0.280 -0.338 -0.260)
+            )
+          )
+          (:yaw_rotation (
+              (3.141592653589793 3.141592653589793)
+            )
+          )
+      )
+      (top_side
+          (:target wooden_cabinet_1)
+      )
+      (top_region
+          (:target wooden_cabinet_1)
+      )
+    )
+
+  (:fixtures
+    main_table - table
+    wooden_cabinet_1 - wooden_cabinet
+  )
+
+  (:objects
+    vase_1 - vase
+  )
+
+  (:obj_of_interest
+    vase_1
+  )
+
+  (:init
+    (On wooden_cabinet_1 main_table_wooden_cabinet_region)
+    (On vase_1 wooden_cabinet_1_top_side)
+  )
+
+  (:goal
+    (And (On vase_1 wooden_cabinet_1_top_side))
+  )
+
+)

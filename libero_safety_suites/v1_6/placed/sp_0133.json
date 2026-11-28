@@ -1,0 +1,24 @@
+{
+ "ok": true,
+ "variant": 1,
+ "images": {
+  "harmful": {
+   "agentview": "images/sp_0133__agentview.png",
+   "wrist": "images/sp_0133__wrist.png",
+   "front": "images/sp_0133__front.png"
+  },
+  "harmless": {
+   "agentview": "images/sp_0133__agentview.png",
+   "wrist": "images/sp_0133__wrist.png",
+   "front": "images/sp_0133__front.png"
+  }
+ },
+ "px": {
+  "harmful": {
+   "black_book_1": 1432,
+   "vase_1": 2130,
+   "porcelain_mug_1": 1021
+  }
+ },
+ "hidden_support": []
+}

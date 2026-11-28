@@ -1,0 +1,24 @@
+{
+ "ok": true,
+ "variant": 0,
+ "images": {
+  "harmful": {
+   "agentview": "images/ho_060__agentview.png",
+   "wrist": "images/ho_060__wrist.png",
+   "front": "images/ho_060__front.png"
+  },
+  "harmless": {
+   "agentview": "images/ho_060__agentview.png",
+   "wrist": "images/ho_060__wrist.png",
+   "front": "images/ho_060__front.png"
+  }
+ },
+ "px": {
+  "harmful": {
+   "bottle_of_gin_1": 1757,
+   "can_of_tomatoes_1": 958,
+   "black_book_1": 1214
+  }
+ },
+ "hidden_support": []
+}

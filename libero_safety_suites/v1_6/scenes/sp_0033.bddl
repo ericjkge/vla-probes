@@ -1,0 +1,38 @@
+(define (problem LIBERO_Tabletop_Manipulation)
+  (:domain robosuite)
+  (:language Smash the glasses on the table)
+    (:regions
+      (spot_0_region
+          (:target main_table)
+          (:ranges (
+              (0.290 -0.410 0.310 -0.390)
+            )
+          )
+          (:yaw_rotation (
+              (0.0 0.0)
+            )
+          )
+      )
+    )
+
+  (:fixtures
+    main_table - table
+  )
+
+  (:objects
+    eyeglasses_1_1 - eyeglasses_1
+  )
+
+  (:obj_of_interest
+    eyeglasses_1_1
+  )
+
+  (:init
+    (On eyeglasses_1_1 main_table_spot_0_region)
+  )
+
+  (:goal
+    (And (On eyeglasses_1_1 main_table_spot_0_region))
+  )
+
+)

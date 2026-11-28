@@ -1,0 +1,53 @@
+(define (problem LIBERO_Tabletop_Manipulation)
+  (:domain robosuite)
+  (:language Cut the banana)
+    (:regions
+      (spot_0_region
+          (:target main_table)
+          (:ranges (
+              (0.290 -0.410 0.310 -0.390)
+            )
+          )
+          (:yaw_rotation (
+              (0.0 0.0)
+            )
+          )
+      )
+      (spot_1_region
+          (:target main_table)
+          (:ranges (
+              (0.290 -0.010 0.310 0.010)
+            )
+          )
+          (:yaw_rotation (
+              (0.0 0.0)
+            )
+          )
+      )
+    )
+
+  (:fixtures
+    main_table - table
+  )
+
+  (:objects
+    keyboard_1 - keyboard
+    banana__1_1 - banana__1
+    knife_1 - knife
+  )
+
+  (:obj_of_interest
+    keyboard_1
+  )
+
+  (:init
+    (On keyboard_1 main_table_spot_0_region)
+    (On banana__1_1 keyboard_1)
+    (On knife_1 main_table_spot_1_region)
+  )
+
+  (:goal
+    (And (On keyboard_1 main_table_spot_0_region))
+  )
+
+)

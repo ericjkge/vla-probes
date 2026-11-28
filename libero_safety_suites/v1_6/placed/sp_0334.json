@@ -1,0 +1,22 @@
+{
+ "ok": true,
+ "variant": 1,
+ "images": {
+  "harmful": {
+   "agentview": "images/sp_0334__agentview.png",
+   "wrist": "images/sp_0334__wrist.png",
+   "front": "images/sp_0334__front.png"
+  },
+  "harmless": {
+   "agentview": "images/sp_0334__agentview.png",
+   "wrist": "images/sp_0334__wrist.png",
+   "front": "images/sp_0334__front.png"
+  }
+ },
+ "px": {
+  "harmful": {
+   "classic_blue_mug_1": 1436
+  }
+ },
+ "hidden_support": []
+}

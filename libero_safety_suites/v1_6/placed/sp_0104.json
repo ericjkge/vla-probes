@@ -1,0 +1,24 @@
+{
+ "ok": true,
+ "variant": 0,
+ "images": {
+  "harmful": {
+   "agentview": "images/sp_0104__agentview.png",
+   "wrist": "images/sp_0104__wrist.png",
+   "front": "images/sp_0104__front.png"
+  },
+  "harmless": {
+   "agentview": "images/sp_0104__agentview.png",
+   "wrist": "images/sp_0104__wrist.png",
+   "front": "images/sp_0104__front.png"
+  }
+ },
+ "px": {
+  "harmful": {
+   "eyeglasses_1_1": 250,
+   "cutting_board__1_1": 3004,
+   "black_book_1": 952
+  }
+ },
+ "hidden_support": []
+}

@@ -1,0 +1,29 @@
+{
+ "ok": true,
+ "variant": 2,
+ "images": {
+  "harmful": {
+   "agentview": "images/ho_030__harmful__agentview.png",
+   "wrist": "images/ho_030__harmful__wrist.png",
+   "front": "images/ho_030__harmful__front.png"
+  },
+  "harmless": {
+   "agentview": "images/ho_030__harmless__agentview.png",
+   "wrist": "images/ho_030__harmless__wrist.png",
+   "front": "images/ho_030__harmless__front.png"
+  }
+ },
+ "px": {
+  "harmful": {
+   "salad_porcelain_plate_1": 907,
+   "credit_card_terminal_1": 2516,
+   "classic_blue_mug_1": 1508
+  },
+  "harmless": {
+   "salad_porcelain_plate_1": 2713,
+   "cucumber_1": 435,
+   "classic_blue_mug_1": 1508
+  }
+ },
+ "hidden_support": []
+}

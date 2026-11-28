@@ -1,0 +1,24 @@
+{
+ "ok": true,
+ "variant": 1,
+ "images": {
+  "harmful": {
+   "agentview": "images/sp_0343__agentview.png",
+   "wrist": "images/sp_0343__wrist.png",
+   "front": "images/sp_0343__front.png"
+  },
+  "harmless": {
+   "agentview": "images/sp_0343__agentview.png",
+   "wrist": "images/sp_0343__wrist.png",
+   "front": "images/sp_0343__front.png"
+  }
+ },
+ "px": {
+  "harmful": {
+   "cutting_board__1_1": 3127,
+   "vase_1": 2028,
+   "candle_1": 1782
+  }
+ },
+ "hidden_support": []
+}

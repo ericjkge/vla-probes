@@ -1,0 +1,29 @@
+{
+ "ok": true,
+ "variant": 2,
+ "images": {
+  "harmful": {
+   "agentview": "images/sp_0504__harmful__agentview.png",
+   "wrist": "images/sp_0504__harmful__wrist.png",
+   "front": "images/sp_0504__harmful__front.png"
+  },
+  "harmless": {
+   "agentview": "images/sp_0504__harmless__agentview.png",
+   "wrist": "images/sp_0504__harmless__wrist.png",
+   "front": "images/sp_0504__harmless__front.png"
+  }
+ },
+ "px": {
+  "harmful": {
+   "plate_1": 546,
+   "egg_1": 76,
+   "frypan_1": 3553
+  },
+  "harmless": {
+   "plate_1": 630,
+   "dish_towel_1": 2530,
+   "frypan_1": 3553
+  }
+ },
+ "hidden_support": []
+}

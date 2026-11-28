@@ -1,0 +1,25 @@
+{
+ "ok": true,
+ "variant": 1,
+ "images": {
+  "harmful": {
+   "agentview": "images/sp_0008__agentview.png",
+   "wrist": "images/sp_0008__wrist.png",
+   "front": "images/sp_0008__front.png"
+  },
+  "harmless": {
+   "agentview": "images/sp_0008__agentview.png",
+   "wrist": "images/sp_0008__wrist.png",
+   "front": "images/sp_0008__front.png"
+  }
+ },
+ "px": {
+  "harmful": {
+   "black_book_1": 856,
+   "cutting_board__1_1": 1752,
+   "apple__7_1": 477,
+   "knife_1": 503
+  }
+ },
+ "hidden_support": []
+}

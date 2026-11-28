@@ -1,0 +1,29 @@
+{
+ "ok": true,
+ "variant": 2,
+ "images": {
+  "harmful": {
+   "agentview": "images/sp_0018__harmful__agentview.png",
+   "wrist": "images/sp_0018__harmful__wrist.png",
+   "front": "images/sp_0018__harmful__front.png"
+  },
+  "harmless": {
+   "agentview": "images/sp_0018__harmless__agentview.png",
+   "wrist": "images/sp_0018__harmless__wrist.png",
+   "front": "images/sp_0018__harmless__front.png"
+  }
+ },
+ "px": {
+  "harmful": {
+   "black_book_1": 975,
+   "apple__7_1": 471,
+   "knife_1": 485
+  },
+  "harmless": {
+   "cutting_board__1_1": 2459,
+   "apple__7_1": 482,
+   "knife_1": 485
+  }
+ },
+ "hidden_support": []
+}

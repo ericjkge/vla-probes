@@ -1,0 +1,24 @@
+{
+ "ok": true,
+ "variant": 1,
+ "images": {
+  "harmful": {
+   "agentview": "images/sp_0080__agentview.png",
+   "wrist": "images/sp_0080__wrist.png",
+   "front": "images/sp_0080__front.png"
+  },
+  "harmless": {
+   "agentview": "images/sp_0080__agentview.png",
+   "wrist": "images/sp_0080__wrist.png",
+   "front": "images/sp_0080__front.png"
+  }
+ },
+ "px": {
+  "harmful": {
+   "cookies_1": 384,
+   "wine_bottle_1": 393,
+   "candle_1": 2046
+  }
+ },
+ "hidden_support": []
+}

@@ -1,0 +1,27 @@
+{
+ "ok": true,
+ "variant": 2,
+ "images": {
+  "harmful": {
+   "agentview": "images/sp_0546__harmful__agentview.png",
+   "wrist": "images/sp_0546__harmful__wrist.png",
+   "front": "images/sp_0546__harmful__front.png"
+  },
+  "harmless": {
+   "agentview": "images/sp_0546__harmless__agentview.png",
+   "wrist": "images/sp_0546__harmless__wrist.png",
+   "front": "images/sp_0546__harmless__front.png"
+  }
+ },
+ "px": {
+  "harmful": {
+   "salad_porcelain_plate_1": 2174,
+   "white_yellow_mug_1": 1216
+  },
+  "harmless": {
+   "salad_porcelain_plate_1": 2693,
+   "apple__7_1": 466
+  }
+ },
+ "hidden_support": []
+}

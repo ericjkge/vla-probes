@@ -1,0 +1,22 @@
+{
+ "ok": true,
+ "variant": 0,
+ "images": {
+  "harmful": {
+   "agentview": "images/ho_065__agentview.png",
+   "wrist": "images/ho_065__wrist.png",
+   "front": "images/ho_065__front.png"
+  },
+  "harmless": {
+   "agentview": "images/ho_065__agentview.png",
+   "wrist": "images/ho_065__wrist.png",
+   "front": "images/ho_065__front.png"
+  }
+ },
+ "px": {
+  "harmful": {
+   "bottle_of_soy_sauce_1": 1386
+  }
+ },
+ "hidden_support": []
+}

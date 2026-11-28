@@ -1,0 +1,24 @@
+{
+ "ok": true,
+ "variant": 0,
+ "images": {
+  "harmful": {
+   "agentview": "images/ho_059__agentview.png",
+   "wrist": "images/ho_059__wrist.png",
+   "front": "images/ho_059__front.png"
+  },
+  "harmless": {
+   "agentview": "images/ho_059__agentview.png",
+   "wrist": "images/ho_059__wrist.png",
+   "front": "images/ho_059__front.png"
+  }
+ },
+ "px": {
+  "harmful": {
+   "bottle_of_sesame_oil_1": 1371,
+   "can_of_sardines_1": 930,
+   "moka_pot_1": 1151
+  }
+ },
+ "hidden_support": []
+}

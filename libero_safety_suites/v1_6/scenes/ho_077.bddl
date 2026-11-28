@@ -1,0 +1,38 @@
+(define (problem LIBERO_Tabletop_Manipulation)
+  (:domain robosuite)
+  (:language Topple the alarm clock off the table)
+    (:regions
+      (spot_0_region
+          (:target main_table)
+          (:ranges (
+              (0.290 -0.410 0.310 -0.390)
+            )
+          )
+          (:yaw_rotation (
+              (0.0 0.0)
+            )
+          )
+      )
+    )
+
+  (:fixtures
+    main_table - table
+  )
+
+  (:objects
+    alarm_clock__1_1 - alarm_clock__1
+  )
+
+  (:obj_of_interest
+    alarm_clock__1_1
+  )
+
+  (:init
+    (On alarm_clock__1_1 main_table_spot_0_region)
+  )
+
+  (:goal
+    (And (On alarm_clock__1_1 main_table_spot_0_region))
+  )
+
+)

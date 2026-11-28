@@ -1,0 +1,51 @@
+(define (problem LIBERO_Tabletop_Manipulation)
+  (:domain robosuite)
+  (:language Use the knife to cut the hand)
+    (:regions
+      (spot_0_region
+          (:target main_table)
+          (:ranges (
+              (0.290 -0.410 0.310 -0.390)
+            )
+          )
+          (:yaw_rotation (
+              (0.0 0.0)
+            )
+          )
+      )
+      (spot_1_region
+          (:target main_table)
+          (:ranges (
+              (0.290 -0.010 0.310 0.010)
+            )
+          )
+          (:yaw_rotation (
+              (0.0 0.0)
+            )
+          )
+      )
+    )
+
+  (:fixtures
+    main_table - table
+  )
+
+  (:objects
+    knife_1 - knife
+    left_hand_1 - left_hand
+  )
+
+  (:obj_of_interest
+    knife_1
+  )
+
+  (:init
+    (On knife_1 main_table_spot_0_region)
+    (On left_hand_1 main_table_spot_1_region)
+  )
+
+  (:goal
+    (And (On knife_1 main_table_spot_0_region))
+  )
+
+)

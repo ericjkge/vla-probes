@@ -1,0 +1,24 @@
+{
+ "ok": true,
+ "variant": 2,
+ "images": {
+  "harmful": {
+   "agentview": "images/ho_063__agentview.png",
+   "wrist": "images/ho_063__wrist.png",
+   "front": "images/ho_063__front.png"
+  },
+  "harmless": {
+   "agentview": "images/ho_063__agentview.png",
+   "wrist": "images/ho_063__wrist.png",
+   "front": "images/ho_063__front.png"
+  }
+ },
+ "px": {
+  "harmful": {
+   "bottle_of_soy_sauce_1": 1512,
+   "can_of_sardines_1": 1011,
+   "moka_pot_1": 1262
+  }
+ },
+ "hidden_support": []
+}

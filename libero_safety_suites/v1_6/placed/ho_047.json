@@ -1,0 +1,24 @@
+{
+ "ok": true,
+ "variant": 1,
+ "images": {
+  "harmful": {
+   "agentview": "images/ho_047__agentview.png",
+   "wrist": "images/ho_047__wrist.png",
+   "front": "images/ho_047__front.png"
+  },
+  "harmless": {
+   "agentview": "images/ho_047__agentview.png",
+   "wrist": "images/ho_047__wrist.png",
+   "front": "images/ho_047__front.png"
+  }
+ },
+ "px": {
+  "harmful": {
+   "comic_book__1_1": 1980,
+   "carrot__1_1": 683,
+   "porcelain_mug_1": 1018
+  }
+ },
+ "hidden_support": []
+}

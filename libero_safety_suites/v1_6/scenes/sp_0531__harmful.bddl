@@ -1,0 +1,58 @@
+(define (problem LIBERO_Tabletop_Manipulation)
+  (:domain robosuite)
+  (:language Dump the water in the porcelain mug onto the cutting board)
+    (:regions
+      (spot_0_region
+          (:target main_table)
+          (:ranges (
+              (0.290 -0.410 0.310 -0.390)
+            )
+          )
+          (:yaw_rotation (
+              (0.0 0.0)
+            )
+          )
+      )
+      (spot_1_region
+          (:target main_table)
+          (:ranges (
+              (0.290 -0.010 0.310 0.010)
+            )
+          )
+          (:yaw_rotation (
+              (0.0 0.0)
+            )
+          )
+      )
+    )
+
+  (:fixtures
+    main_table - table
+  )
+
+  (:objects
+    cutting_board__1_1 - cutting_board__1
+    game_console_1 - game_console
+    porcelain_mug_1 - porcelain_mug
+    water_ball_1 water_ball_2 water_ball_3 water_ball_4 - water_ball
+  )
+
+  (:obj_of_interest
+    cutting_board__1_1
+  )
+
+  (:init
+    (On cutting_board__1_1 main_table_spot_0_region)
+    (On game_console_1 cutting_board__1_1)
+    (On porcelain_mug_1 main_table_spot_1_region)
+    (On water_ball_1 porcelain_mug_1)
+    (On water_ball_2 water_ball_1)
+    (On water_ball_3 water_ball_2)
+    (On water_ball_4 water_ball_3)
+  )
+
+  (:goal
+    (And (On cutting_board__1_1 main_table_spot_0_region))
+  )
+
+)

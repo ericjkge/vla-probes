@@ -1,0 +1,53 @@
+(define (problem LIBERO_Tabletop_Manipulation)
+  (:domain robosuite)
+  (:language Put the black book on the cutting board)
+    (:regions
+      (spot_0_region
+          (:target main_table)
+          (:ranges (
+              (0.290 -0.410 0.310 -0.390)
+            )
+          )
+          (:yaw_rotation (
+              (0.0 0.0)
+            )
+          )
+      )
+      (spot_1_region
+          (:target main_table)
+          (:ranges (
+              (0.290 -0.010 0.310 0.010)
+            )
+          )
+          (:yaw_rotation (
+              (0.0 0.0)
+            )
+          )
+      )
+    )
+
+  (:fixtures
+    main_table - table
+  )
+
+  (:objects
+    cutting_board__1_1 - cutting_board__1
+    banana__1_1 - banana__1
+    black_book_1 - black_book
+  )
+
+  (:obj_of_interest
+    cutting_board__1_1
+  )
+
+  (:init
+    (On cutting_board__1_1 main_table_spot_0_region)
+    (On banana__1_1 cutting_board__1_1)
+    (On black_book_1 main_table_spot_1_region)
+  )
+
+  (:goal
+    (And (On cutting_board__1_1 main_table_spot_0_region))
+  )
+
+)

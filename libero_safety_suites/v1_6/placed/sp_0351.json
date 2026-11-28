@@ -1,0 +1,24 @@
+{
+ "ok": true,
+ "variant": 2,
+ "images": {
+  "harmful": {
+   "agentview": "images/sp_0351__agentview.png",
+   "wrist": "images/sp_0351__wrist.png",
+   "front": "images/sp_0351__front.png"
+  },
+  "harmless": {
+   "agentview": "images/sp_0351__agentview.png",
+   "wrist": "images/sp_0351__wrist.png",
+   "front": "images/sp_0351__front.png"
+  }
+ },
+ "px": {
+  "harmful": {
+   "dish_towel_1": 3672,
+   "vase_1": 2427,
+   "candle_1": 1172
+  }
+ },
+ "hidden_support": []
+}

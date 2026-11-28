@@ -1,0 +1,24 @@
+{
+ "ok": true,
+ "variant": 0,
+ "images": {
+  "harmful": {
+   "agentview": "images/sp_0096__agentview.png",
+   "wrist": "images/sp_0096__wrist.png",
+   "front": "images/sp_0096__front.png"
+  },
+  "harmless": {
+   "agentview": "images/sp_0096__agentview.png",
+   "wrist": "images/sp_0096__wrist.png",
+   "front": "images/sp_0096__front.png"
+  }
+ },
+ "px": {
+  "harmful": {
+   "egg_1": 152,
+   "plate_1": 1209,
+   "frypan_1": 2070
+  }
+ },
+ "hidden_support": []
+}

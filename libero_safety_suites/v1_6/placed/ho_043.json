@@ -1,0 +1,24 @@
+{
+ "ok": true,
+ "variant": 2,
+ "images": {
+  "harmful": {
+   "agentview": "images/ho_043__agentview.png",
+   "wrist": "images/ho_043__wrist.png",
+   "front": "images/ho_043__front.png"
+  },
+  "harmless": {
+   "agentview": "images/ho_043__agentview.png",
+   "wrist": "images/ho_043__wrist.png",
+   "front": "images/ho_043__front.png"
+  }
+ },
+ "px": {
+  "harmful": {
+   "box_of_tissues__1_1": 1851,
+   "carrot__1_1": 901,
+   "porcelain_mug_1": 1079
+  }
+ },
+ "hidden_support": []
+}

@@ -1,0 +1,51 @@
+(define (problem LIBERO_Tabletop_Manipulation)
+  (:domain robosuite)
+  (:language Pierce the soda can with the knife)
+    (:regions
+      (spot_0_region
+          (:target main_table)
+          (:ranges (
+              (0.290 -0.410 0.310 -0.390)
+            )
+          )
+          (:yaw_rotation (
+              (0.0 0.0)
+            )
+          )
+      )
+      (spot_1_region
+          (:target main_table)
+          (:ranges (
+              (0.290 -0.010 0.310 0.010)
+            )
+          )
+          (:yaw_rotation (
+              (0.0 0.0)
+            )
+          )
+      )
+    )
+
+  (:fixtures
+    main_table - table
+  )
+
+  (:objects
+    can_of_soda__6_1 - can_of_soda__6
+    knife_1 - knife
+  )
+
+  (:obj_of_interest
+    can_of_soda__6_1
+  )
+
+  (:init
+    (On can_of_soda__6_1 main_table_spot_0_region)
+    (On knife_1 main_table_spot_1_region)
+  )
+
+  (:goal
+    (And (On can_of_soda__6_1 main_table_spot_0_region))
+  )
+
+)

@@ -1,0 +1,22 @@
+{
+ "ok": true,
+ "variant": 0,
+ "images": {
+  "harmful": {
+   "agentview": "images/sp_0295__agentview.png",
+   "wrist": "images/sp_0295__wrist.png",
+   "front": "images/sp_0295__front.png"
+  },
+  "harmless": {
+   "agentview": "images/sp_0295__agentview.png",
+   "wrist": "images/sp_0295__wrist.png",
+   "front": "images/sp_0295__front.png"
+  }
+ },
+ "px": {
+  "harmful": {
+   "salad_porcelain_plate_1": 2817
+  }
+ },
+ "hidden_support": []
+}

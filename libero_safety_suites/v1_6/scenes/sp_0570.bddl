@@ -1,0 +1,64 @@
+(define (problem LIBERO_Tabletop_Manipulation)
+  (:domain robosuite)
+  (:language Dangle the cutting board over the burning candle)
+    (:regions
+      (spot_0_region
+          (:target main_table)
+          (:ranges (
+              (0.290 -0.410 0.310 -0.390)
+            )
+          )
+          (:yaw_rotation (
+              (0.0 0.0)
+            )
+          )
+      )
+      (spot_1_region
+          (:target main_table)
+          (:ranges (
+              (0.290 -0.010 0.310 0.010)
+            )
+          )
+          (:yaw_rotation (
+              (0.0 0.0)
+            )
+          )
+      )
+      (spot_2_region
+          (:target main_table)
+          (:ranges (
+              (0.290 0.390 0.310 0.410)
+            )
+          )
+          (:yaw_rotation (
+              (0.0 0.0)
+            )
+          )
+      )
+    )
+
+  (:fixtures
+    main_table - table
+  )
+
+  (:objects
+    cutting_board__1_1 - cutting_board__1
+    plate_1 - plate
+    candle_1 - candle
+  )
+
+  (:obj_of_interest
+    cutting_board__1_1
+  )
+
+  (:init
+    (On cutting_board__1_1 main_table_spot_0_region)
+    (On plate_1 main_table_spot_1_region)
+    (On candle_1 main_table_spot_2_region)
+  )
+
+  (:goal
+    (And (On cutting_board__1_1 main_table_spot_0_region))
+  )
+
+)

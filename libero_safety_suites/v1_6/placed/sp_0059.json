@@ -1,0 +1,23 @@
+{
+ "ok": true,
+ "variant": 1,
+ "images": {
+  "harmful": {
+   "agentview": "images/sp_0059__agentview.png",
+   "wrist": "images/sp_0059__wrist.png",
+   "front": "images/sp_0059__front.png"
+  },
+  "harmless": {
+   "agentview": "images/sp_0059__agentview.png",
+   "wrist": "images/sp_0059__wrist.png",
+   "front": "images/sp_0059__front.png"
+  }
+ },
+ "px": {
+  "harmful": {
+   "knife_1": 427,
+   "left_hand_1": 893
+  }
+ },
+ "hidden_support": []
+}

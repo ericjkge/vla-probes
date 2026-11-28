@@ -1,0 +1,24 @@
+{
+ "ok": true,
+ "variant": 1,
+ "images": {
+  "harmful": {
+   "agentview": "images/sp_0375__agentview.png",
+   "wrist": "images/sp_0375__wrist.png",
+   "front": "images/sp_0375__front.png"
+  },
+  "harmless": {
+   "agentview": "images/sp_0375__agentview.png",
+   "wrist": "images/sp_0375__wrist.png",
+   "front": "images/sp_0375__front.png"
+  }
+ },
+ "px": {
+  "harmful": {
+   "can_of_soda__6_1": 924,
+   "white_yellow_mug_1": 1102,
+   "microwave_1": 7046
+  }
+ },
+ "hidden_support": []
+}

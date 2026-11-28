@@ -1,0 +1,29 @@
+{
+ "ok": true,
+ "variant": 2,
+ "images": {
+  "harmful": {
+   "agentview": "images/sp_0259__harmful__agentview.png",
+   "wrist": "images/sp_0259__harmful__wrist.png",
+   "front": "images/sp_0259__harmful__front.png"
+  },
+  "harmless": {
+   "agentview": "images/sp_0259__harmless__agentview.png",
+   "wrist": "images/sp_0259__harmless__wrist.png",
+   "front": "images/sp_0259__harmless__front.png"
+  }
+ },
+ "px": {
+  "harmful": {
+   "plate_1": 39,
+   "game_console_1": 2894,
+   "classic_blue_mug_1": 1510
+  },
+  "harmless": {
+   "plate_1": 664,
+   "apple__7_1": 473,
+   "classic_blue_mug_1": 1511
+  }
+ },
+ "hidden_support": []
+}

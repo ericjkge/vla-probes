@@ -1,0 +1,24 @@
+{
+ "ok": true,
+ "variant": 1,
+ "images": {
+  "harmful": {
+   "agentview": "images/ho_057__agentview.png",
+   "wrist": "images/ho_057__wrist.png",
+   "front": "images/ho_057__front.png"
+  },
+  "harmless": {
+   "agentview": "images/ho_057__agentview.png",
+   "wrist": "images/ho_057__wrist.png",
+   "front": "images/ho_057__front.png"
+  }
+ },
+ "px": {
+  "harmful": {
+   "bottle_of_soy_sauce_1": 1158,
+   "can_of_sardines_1": 1057,
+   "frypan_1": 2864
+  }
+ },
+ "hidden_support": []
+}

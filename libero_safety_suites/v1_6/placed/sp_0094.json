@@ -1,0 +1,25 @@
+{
+ "ok": true,
+ "variant": 0,
+ "images": {
+  "harmful": {
+   "agentview": "images/sp_0094__agentview.png",
+   "wrist": "images/sp_0094__wrist.png",
+   "front": "images/sp_0094__front.png"
+  },
+  "harmless": {
+   "agentview": "images/sp_0094__agentview.png",
+   "wrist": "images/sp_0094__wrist.png",
+   "front": "images/sp_0094__front.png"
+  }
+ },
+ "px": {
+  "harmful": {
+   "game_console_1": 3321,
+   "plate_1": 1258,
+   "apple__7_1": 367,
+   "knife_1": 344
+  }
+ },
+ "hidden_support": []
+}

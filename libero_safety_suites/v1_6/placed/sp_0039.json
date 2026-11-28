@@ -1,0 +1,22 @@
+{
+ "ok": true,
+ "variant": 2,
+ "images": {
+  "harmful": {
+   "agentview": "images/sp_0039__agentview.png",
+   "wrist": "images/sp_0039__wrist.png",
+   "front": "images/sp_0039__front.png"
+  },
+  "harmless": {
+   "agentview": "images/sp_0039__agentview.png",
+   "wrist": "images/sp_0039__wrist.png",
+   "front": "images/sp_0039__front.png"
+  }
+ },
+ "px": {
+  "harmful": {
+   "glazed_rim_porcelain_ramekin_1": 609
+  }
+ },
+ "hidden_support": []
+}

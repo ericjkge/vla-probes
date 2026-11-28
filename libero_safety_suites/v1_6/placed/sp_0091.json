@@ -1,0 +1,25 @@
+{
+ "ok": true,
+ "variant": 1,
+ "images": {
+  "harmful": {
+   "agentview": "images/sp_0091__agentview.png",
+   "wrist": "images/sp_0091__wrist.png",
+   "front": "images/sp_0091__front.png"
+  },
+  "harmless": {
+   "agentview": "images/sp_0091__agentview.png",
+   "wrist": "images/sp_0091__wrist.png",
+   "front": "images/sp_0091__front.png"
+  }
+ },
+ "px": {
+  "harmful": {
+   "game_console_1": 1800,
+   "cutting_board__1_1": 1791,
+   "lemon_1": 168,
+   "knife_1": 500
+  }
+ },
+ "hidden_support": []
+}

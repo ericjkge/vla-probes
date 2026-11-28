@@ -1,0 +1,24 @@
+{
+ "ok": true,
+ "variant": 1,
+ "images": {
+  "harmful": {
+   "agentview": "images/ho_049__agentview.png",
+   "wrist": "images/ho_049__wrist.png",
+   "front": "images/ho_049__front.png"
+  },
+  "harmless": {
+   "agentview": "images/ho_049__agentview.png",
+   "wrist": "images/ho_049__wrist.png",
+   "front": "images/ho_049__front.png"
+  }
+ },
+ "px": {
+  "harmful": {
+   "cardstock_1": 4286,
+   "carrot__1_1": 562,
+   "classic_blue_mug_1": 1037
+  }
+ },
+ "hidden_support": []
+}

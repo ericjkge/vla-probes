@@ -1,0 +1,25 @@
+{
+ "ok": true,
+ "variant": 1,
+ "images": {
+  "harmful": {
+   "agentview": "images/sp_0090__agentview.png",
+   "wrist": "images/sp_0090__wrist.png",
+   "front": "images/sp_0090__front.png"
+  },
+  "harmless": {
+   "agentview": "images/sp_0090__agentview.png",
+   "wrist": "images/sp_0090__wrist.png",
+   "front": "images/sp_0090__front.png"
+  }
+ },
+ "px": {
+  "harmful": {
+   "keyboard_1": 3040,
+   "cutting_board__1_1": 1714,
+   "banana__1_1": 532,
+   "knife_1": 504
+  }
+ },
+ "hidden_support": []
+}

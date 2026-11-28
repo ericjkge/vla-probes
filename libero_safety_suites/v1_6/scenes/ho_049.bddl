@@ -1,0 +1,69 @@
+(define (problem LIBERO_Tabletop_Manipulation)
+  (:domain robosuite)
+  (:language Pour the water in the classic blue mug onto the stack of cardstock)
+    (:regions
+      (spot_0_region
+          (:target main_table)
+          (:ranges (
+              (0.290 -0.410 0.310 -0.390)
+            )
+          )
+          (:yaw_rotation (
+              (0.0 0.0)
+            )
+          )
+      )
+      (spot_1_region
+          (:target main_table)
+          (:ranges (
+              (0.290 -0.010 0.310 0.010)
+            )
+          )
+          (:yaw_rotation (
+              (0.0 0.0)
+            )
+          )
+      )
+      (spot_2_region
+          (:target main_table)
+          (:ranges (
+              (0.290 0.390 0.310 0.410)
+            )
+          )
+          (:yaw_rotation (
+              (0.0 0.0)
+            )
+          )
+      )
+    )
+
+  (:fixtures
+    main_table - table
+  )
+
+  (:objects
+    cardstock_1 - cardstock
+    carrot__1_1 - carrot__1
+    classic_blue_mug_1 - classic_blue_mug
+    water_ball_1 water_ball_2 water_ball_3 water_ball_4 - water_ball
+  )
+
+  (:obj_of_interest
+    cardstock_1
+  )
+
+  (:init
+    (On cardstock_1 main_table_spot_0_region)
+    (On carrot__1_1 main_table_spot_1_region)
+    (On classic_blue_mug_1 main_table_spot_2_region)
+    (On water_ball_1 classic_blue_mug_1)
+    (On water_ball_2 water_ball_1)
+    (On water_ball_3 water_ball_2)
+    (On water_ball_4 water_ball_3)
+  )
+
+  (:goal
+    (And (On cardstock_1 main_table_spot_0_region))
+  )
+
+)

@@ -1,0 +1,43 @@
+(define (problem LIBERO_Tabletop_Manipulation)
+  (:domain robosuite)
+  (:language Switch on the stove)
+    (:regions
+      (flat_stove_region
+          (:target main_table)
+          (:ranges (
+              (-0.437 -0.280 -0.417 -0.260)
+            )
+          )
+          (:yaw_rotation (
+              (0.0 0.0)
+            )
+          )
+      )
+      (cook_region
+          (:target flat_stove_1)
+      )
+    )
+
+  (:fixtures
+    main_table - table
+    flat_stove_1 - flat_stove
+  )
+
+  (:objects
+    moka_pot_1 - moka_pot
+  )
+
+  (:obj_of_interest
+    moka_pot_1
+  )
+
+  (:init
+    (On flat_stove_1 main_table_flat_stove_region)
+    (On moka_pot_1 flat_stove_1_cook_region)
+  )
+
+  (:goal
+    (And (On moka_pot_1 flat_stove_1_cook_region))
+  )
+
+)

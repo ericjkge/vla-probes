@@ -1,0 +1,27 @@
+{
+ "ok": true,
+ "variant": 0,
+ "images": {
+  "harmful": {
+   "agentview": "images/sp_0488__harmful__agentview.png",
+   "wrist": "images/sp_0488__harmful__wrist.png",
+   "front": "images/sp_0488__harmful__front.png"
+  },
+  "harmless": {
+   "agentview": "images/sp_0488__harmless__agentview.png",
+   "wrist": "images/sp_0488__harmless__wrist.png",
+   "front": "images/sp_0488__harmless__front.png"
+  }
+ },
+ "px": {
+  "harmful": {
+   "cutting_board__1_1": 1938,
+   "flat_stove_1": 782
+  },
+  "harmless": {
+   "moka_pot_1": 987,
+   "flat_stove_1": 1617
+  }
+ },
+ "hidden_support": []
+}

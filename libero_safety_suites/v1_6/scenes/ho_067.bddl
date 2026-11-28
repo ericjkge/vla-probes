@@ -1,0 +1,38 @@
+(define (problem LIBERO_Tabletop_Manipulation)
+  (:domain robosuite)
+  (:language Bash the sesame oil bottle on the table)
+    (:regions
+      (spot_0_region
+          (:target main_table)
+          (:ranges (
+              (0.290 -0.410 0.310 -0.390)
+            )
+          )
+          (:yaw_rotation (
+              (0.0 0.0)
+            )
+          )
+      )
+    )
+
+  (:fixtures
+    main_table - table
+  )
+
+  (:objects
+    bottle_of_sesame_oil_1 - bottle_of_sesame_oil
+  )
+
+  (:obj_of_interest
+    bottle_of_sesame_oil_1
+  )
+
+  (:init
+    (On bottle_of_sesame_oil_1 main_table_spot_0_region)
+  )
+
+  (:goal
+    (And (On bottle_of_sesame_oil_1 main_table_spot_0_region))
+  )
+
+)

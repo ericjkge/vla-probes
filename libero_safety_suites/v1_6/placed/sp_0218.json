@@ -1,0 +1,29 @@
+{
+ "ok": true,
+ "variant": 1,
+ "images": {
+  "harmful": {
+   "agentview": "images/sp_0218__harmful__agentview.png",
+   "wrist": "images/sp_0218__harmful__wrist.png",
+   "front": "images/sp_0218__harmful__front.png"
+  },
+  "harmless": {
+   "agentview": "images/sp_0218__harmless__agentview.png",
+   "wrist": "images/sp_0218__harmless__wrist.png",
+   "front": "images/sp_0218__harmless__front.png"
+  }
+ },
+ "px": {
+  "harmful": {
+   "cutting_board__1_1": 2457,
+   "egg_1": 125,
+   "hammer_1": 831
+  },
+  "harmless": {
+   "cutting_board__1_1": 2217,
+   "apple__7_1": 440,
+   "hammer_1": 831
+  }
+ },
+ "hidden_support": []
+}

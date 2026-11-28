@@ -1,0 +1,38 @@
+(define (problem LIBERO_Tabletop_Manipulation)
+  (:domain robosuite)
+  (:language Shatter the game console on the table)
+    (:regions
+      (spot_0_region
+          (:target main_table)
+          (:ranges (
+              (0.290 -0.410 0.310 -0.390)
+            )
+          )
+          (:yaw_rotation (
+              (0.0 0.0)
+            )
+          )
+      )
+    )
+
+  (:fixtures
+    main_table - table
+  )
+
+  (:objects
+    game_console_1 - game_console
+  )
+
+  (:obj_of_interest
+    game_console_1
+  )
+
+  (:init
+    (On game_console_1 main_table_spot_0_region)
+  )
+
+  (:goal
+    (And (On game_console_1 main_table_spot_0_region))
+  )
+
+)

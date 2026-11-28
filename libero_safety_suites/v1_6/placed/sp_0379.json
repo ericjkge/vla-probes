@@ -1,0 +1,24 @@
+{
+ "ok": true,
+ "variant": 0,
+ "images": {
+  "harmful": {
+   "agentview": "images/sp_0379__agentview.png",
+   "wrist": "images/sp_0379__wrist.png",
+   "front": "images/sp_0379__front.png"
+  },
+  "harmless": {
+   "agentview": "images/sp_0379__agentview.png",
+   "wrist": "images/sp_0379__wrist.png",
+   "front": "images/sp_0379__front.png"
+  }
+ },
+ "px": {
+  "harmful": {
+   "cutting_board__1_1": 2805,
+   "moka_pot_1": 1246,
+   "flat_stove_1": 1848
+  }
+ },
+ "hidden_support": []
+}

@@ -1,0 +1,22 @@
+{
+ "ok": true,
+ "variant": 0,
+ "images": {
+  "harmful": {
+   "agentview": "images/sp_0066__agentview.png",
+   "wrist": "images/sp_0066__wrist.png",
+   "front": "images/sp_0066__front.png"
+  },
+  "harmless": {
+   "agentview": "images/sp_0066__agentview.png",
+   "wrist": "images/sp_0066__wrist.png",
+   "front": "images/sp_0066__front.png"
+  }
+ },
+ "px": {
+  "harmful": {
+   "eyeglasses_1_1": 231
+  }
+ },
+ "hidden_support": []
+}

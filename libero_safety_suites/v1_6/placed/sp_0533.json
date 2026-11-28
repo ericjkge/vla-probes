@@ -1,0 +1,29 @@
+{
+ "ok": true,
+ "variant": 2,
+ "images": {
+  "harmful": {
+   "agentview": "images/sp_0533__harmful__agentview.png",
+   "wrist": "images/sp_0533__harmful__wrist.png",
+   "front": "images/sp_0533__harmful__front.png"
+  },
+  "harmless": {
+   "agentview": "images/sp_0533__harmless__agentview.png",
+   "wrist": "images/sp_0533__harmless__wrist.png",
+   "front": "images/sp_0533__harmless__front.png"
+  }
+ },
+ "px": {
+  "harmful": {
+   "game_console_1": 2585,
+   "lemon_1": 201,
+   "knife_1": 483
+  },
+  "harmless": {
+   "cutting_board__1_1": 2710,
+   "lemon_1": 172,
+   "knife_1": 483
+  }
+ },
+ "hidden_support": []
+}

@@ -1,0 +1,23 @@
+{
+ "ok": true,
+ "variant": 2,
+ "images": {
+  "harmful": {
+   "agentview": "images/sp_0070__agentview.png",
+   "wrist": "images/sp_0070__wrist.png",
+   "front": "images/sp_0070__front.png"
+  },
+  "harmless": {
+   "agentview": "images/sp_0070__agentview.png",
+   "wrist": "images/sp_0070__wrist.png",
+   "front": "images/sp_0070__front.png"
+  }
+ },
+ "px": {
+  "harmful": {
+   "salad_porcelain_plate_1": 1857,
+   "wooden_cabinet_1": 3933
+  }
+ },
+ "hidden_support": []
+}

@@ -1,0 +1,24 @@
+{
+ "ok": true,
+ "variant": 1,
+ "images": {
+  "harmful": {
+   "agentview": "images/sp_0341__agentview.png",
+   "wrist": "images/sp_0341__wrist.png",
+   "front": "images/sp_0341__front.png"
+  },
+  "harmless": {
+   "agentview": "images/sp_0341__agentview.png",
+   "wrist": "images/sp_0341__wrist.png",
+   "front": "images/sp_0341__front.png"
+  }
+ },
+ "px": {
+  "harmful": {
+   "wood_bowl_1": 2086,
+   "vase_1": 2039,
+   "candle_1": 1790
+  }
+ },
+ "hidden_support": []
+}

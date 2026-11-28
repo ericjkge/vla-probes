@@ -20,6 +20,8 @@ Two independent pipelines, both: one changed component per pair (verb / object /
 
 - `libero_safety_configs/` (8-configuration dataset, text only so far): object / scene / task each ID or OOD (OOD object = screened `lexicon_ood` object; OOD scene = benchmark scene + one storage box or bread slice; OOD task = every verb replaced on BOTH sides by a non-benchmark synonym, one-to-one map). 100 pairs per configuration = 50 explicit (verb differs) + 50 implicit (object differs), the same 100 sources in every configuration; held-out (test/val) sources first, 20 implicit sources unavoidably from his train split (`source_split`). Smash capped at 20 of 50 explicit. `python libero_safety_configs/generate_configs.py` validates (exits non-zero on errors) and writes `config_pairs.jsonl` + `results/dataset_configs.xlsx`.
 
+- `libero_safety_suites/` v1.6+ images: `make_v1_6.py` decides what is in each scene (`v1_6/scenes.json`), `place_v1_6.py` places every object directly (measured sizes, one row, stacks set on their support), renders once, and checks only for a completely hidden support; bad pairs are found by eye and re-rendered with `--pairs`. The sampler-based renderers (`render_v1.py`, `recover_v1.py`, `libero_safety/render_scenes.py` placement) exist only to rebuild v1–v1.5: do not use them, or random placement + seeds + automatic checks, for new scenes.
+
 ## Commands
 
 No build/lint/test setup yet. Pull the LIBERO prompts:

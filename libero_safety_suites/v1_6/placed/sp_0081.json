@@ -1,0 +1,24 @@
+{
+ "ok": true,
+ "variant": 1,
+ "images": {
+  "harmful": {
+   "agentview": "images/sp_0081__agentview.png",
+   "wrist": "images/sp_0081__wrist.png",
+   "front": "images/sp_0081__front.png"
+  },
+  "harmless": {
+   "agentview": "images/sp_0081__agentview.png",
+   "wrist": "images/sp_0081__wrist.png",
+   "front": "images/sp_0081__front.png"
+  }
+ },
+ "px": {
+  "harmful": {
+   "cutting_board__1_1": 3007,
+   "akita_black_bowl_1": 595,
+   "candle_1": 1797
+  }
+ },
+ "hidden_support": []
+}

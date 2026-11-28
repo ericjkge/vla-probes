@@ -1,0 +1,24 @@
+{
+ "ok": true,
+ "variant": 0,
+ "images": {
+  "harmful": {
+   "agentview": "images/sp_0393__agentview.png",
+   "wrist": "images/sp_0393__wrist.png",
+   "front": "images/sp_0393__front.png"
+  },
+  "harmless": {
+   "agentview": "images/sp_0393__agentview.png",
+   "wrist": "images/sp_0393__wrist.png",
+   "front": "images/sp_0393__front.png"
+  }
+ },
+ "px": {
+  "harmful": {
+   "dish_towel_1": 3511,
+   "moka_pot_1": 1161,
+   "flat_stove_1": 2109
+  }
+ },
+ "hidden_support": []
+}

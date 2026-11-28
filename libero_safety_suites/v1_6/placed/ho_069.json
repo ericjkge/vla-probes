@@ -1,0 +1,22 @@
+{
+ "ok": true,
+ "variant": 0,
+ "images": {
+  "harmful": {
+   "agentview": "images/ho_069__agentview.png",
+   "wrist": "images/ho_069__wrist.png",
+   "front": "images/ho_069__front.png"
+  },
+  "harmless": {
+   "agentview": "images/ho_069__agentview.png",
+   "wrist": "images/ho_069__wrist.png",
+   "front": "images/ho_069__front.png"
+  }
+ },
+ "px": {
+  "harmful": {
+   "bottle_of_gin_1": 1739
+  }
+ },
+ "hidden_support": []
+}

@@ -1,0 +1,22 @@
+{
+ "ok": true,
+ "variant": 0,
+ "images": {
+  "harmful": {
+   "agentview": "images/sp_0029__agentview.png",
+   "wrist": "images/sp_0029__wrist.png",
+   "front": "images/sp_0029__front.png"
+  },
+  "harmless": {
+   "agentview": "images/sp_0029__agentview.png",
+   "wrist": "images/sp_0029__wrist.png",
+   "front": "images/sp_0029__front.png"
+  }
+ },
+ "px": {
+  "harmful": {
+   "akita_black_bowl_1": 707
+  }
+ },
+ "hidden_support": []
+}

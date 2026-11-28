@@ -1,0 +1,23 @@
+{
+ "ok": true,
+ "variant": 1,
+ "images": {
+  "harmful": {
+   "agentview": "images/sp_0064__agentview.png",
+   "wrist": "images/sp_0064__wrist.png",
+   "front": "images/sp_0064__front.png"
+  },
+  "harmless": {
+   "agentview": "images/sp_0064__agentview.png",
+   "wrist": "images/sp_0064__wrist.png",
+   "front": "images/sp_0064__front.png"
+  }
+ },
+ "px": {
+  "harmful": {
+   "game_console_1": 1871,
+   "wooden_cabinet_1": 4300
+  }
+ },
+ "hidden_support": []
+}

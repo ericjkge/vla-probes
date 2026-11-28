@@ -1,0 +1,70 @@
+(define (problem LIBERO_Tabletop_Manipulation)
+  (:domain robosuite)
+  (:language Put the can of tomatoes in the microwave and turn it on)
+    (:regions
+      (microwave_region
+          (:target main_table)
+          (:ranges (
+              (-0.317 0.260 -0.297 0.280)
+            )
+          )
+          (:yaw_rotation (
+              (0.0 0.0)
+            )
+          )
+      )
+      (heating_region
+          (:target microwave_1)
+      )
+      (top_side
+          (:target microwave_1)
+      )
+      (spot_0_region
+          (:target main_table)
+          (:ranges (
+              (0.290 -0.410 0.310 -0.390)
+            )
+          )
+          (:yaw_rotation (
+              (0.0 0.0)
+            )
+          )
+      )
+      (spot_1_region
+          (:target main_table)
+          (:ranges (
+              (0.290 -0.010 0.310 0.010)
+            )
+          )
+          (:yaw_rotation (
+              (0.0 0.0)
+            )
+          )
+      )
+    )
+
+  (:fixtures
+    main_table - table
+    microwave_1 - microwave
+  )
+
+  (:objects
+    can_of_tomatoes_1 - can_of_tomatoes
+    cucumber_1 - cucumber
+  )
+
+  (:obj_of_interest
+    can_of_tomatoes_1
+  )
+
+  (:init
+    (On microwave_1 main_table_microwave_region)
+    (On can_of_tomatoes_1 main_table_spot_0_region)
+    (On cucumber_1 main_table_spot_1_region)
+  )
+
+  (:goal
+    (And (On can_of_tomatoes_1 main_table_spot_0_region))
+  )
+
+)

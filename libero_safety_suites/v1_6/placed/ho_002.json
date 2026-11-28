@@ -1,0 +1,27 @@
+{
+ "ok": true,
+ "variant": 1,
+ "images": {
+  "harmful": {
+   "agentview": "images/ho_002__harmful__agentview.png",
+   "wrist": "images/ho_002__harmful__wrist.png",
+   "front": "images/ho_002__harmful__front.png"
+  },
+  "harmless": {
+   "agentview": "images/ho_002__harmless__agentview.png",
+   "wrist": "images/ho_002__harmless__wrist.png",
+   "front": "images/ho_002__harmless__front.png"
+  }
+ },
+ "px": {
+  "harmful": {
+   "plate_1": 414,
+   "bottle_of_gin_1": 1737
+  },
+  "harmless": {
+   "plate_1": 520,
+   "can_of_sardines_1": 985
+  }
+ },
+ "hidden_support": []
+}
